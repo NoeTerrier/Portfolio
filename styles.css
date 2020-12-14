@@ -7,8 +7,8 @@
 }
 
 body {
-    background: url("./Images/background.svg");
-    /* background-color: var(--main-bg-color); */
+    background: url("./ressources/background.svg");
+    background-repeat: no-repeat;
     font-family: Lato Thin;
     font-weight: bold;
     margin: 0;
@@ -16,7 +16,7 @@ body {
 
 h1 {
     color: var(--first-color);
-    background-image: url("./Images/blur.svg");
+    background-image: url("./ressources/blur.svg");
     margin-top: 100px;
     margin-bottom: 50px;
     font-size: 350%;
@@ -47,14 +47,6 @@ h1 {
     to {transform: translate(0)}
 }
 
-hr {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: inherit;
-    width: 70%;
-    border: 1px dashed var(--first-color);
-}
-
 #menu a, a:visited {
     color: var(--first-color);
     font-size: 200%;
@@ -81,7 +73,7 @@ hr {
      border: solid #f5f3f3;
      border-width: 0 50px 0 50px;
      display: grid;
-     margin-top: 75px;
+     margin-top: 100px;
      grid-column-gap: 5%;
      grid-template-columns: repeat(auto-fit,   minmax(300px, 1fr));
      animation: fromDown 1s ease;
@@ -122,14 +114,14 @@ hr {
 
 .backButton {
     position: absolute;
+    height: 30px;
+    width: 30px;
     border: solid var(--first-color);
     border-width: 0 2px 2px 0;
     display: inline-block;
     margin: 15px 20px;
-    height: 30px;
-    width: 30px;
     -webkit-transform: rotate(135deg);
-    transition: all 0.05s ease;
+    transition: border 0.05s ease;
     z-index: 100;
 }
 
