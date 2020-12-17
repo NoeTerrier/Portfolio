@@ -28,7 +28,7 @@ header {
  .category, .category:visited{
      color: var(--first-color);
      padding: 15px 20px;
-     font-size: 175%;
+     font-size: 2rem;
      text-decoration: none;
      border-radius: 30px;
      transition: background-color 0.5s linear;

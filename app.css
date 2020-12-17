@@ -16,21 +16,25 @@ header {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    z-index: -10;
 }
 
 h1 {
     color: var(--first-color);
-    background-image: url("./ressources/blur.svg");
-    margin: 100px 0 100px 0;
-    font-size: 350%;
+    margin: 0;
+    font-size: 4rem;
     font-weight: 300;
     width: 500px;
     text-align: center;
     animation-name: shade, fromLeft;
     animation-duration: 1s;
     animation-iteration-count: 1;
+}
+
+.title {
+    margin: 100px 0 100px 0;
+    display: inline-flex;
+    align-items: center;
+    background-image: url("./ressources/blur.svg");
 }
 
 @keyframes shade {

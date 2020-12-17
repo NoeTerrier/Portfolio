@@ -4,6 +4,19 @@
     grid-template-rows: 300px;
 }
 
+.title-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    margin: 100px 0 100px 0;
+    display: inline-flex;
+    align-items: center;
+    background-image: url("./ressources/blur.svg");
+}
+
 .column .img-selection {
     width: 150%;
     position: relative;
@@ -12,16 +25,13 @@
 }
 
 .backButton {
-    position: absolute;
     height: 30px;
     width: 30px;
     border: solid var(--first-color);
     border-width: 0 2px 2px 0;
     display: inline-block;
-    margin: 118px 25px;
-    transform: rotate(135deg);
+    transform: translateX(50px) rotate(135deg);
     transition: border 0.05s ease;
-    z-index: 100;
 }
 
 .backButton a{
