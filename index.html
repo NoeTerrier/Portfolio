@@ -2,37 +2,41 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles.css">
-        <title>HOME</title>
+        <link rel="stylesheet" href="./app.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+        <title>Home</title>
     </head>
     <body>
-        <h1>//Noé Terrier</h1>
-        <div class="main">
-            <ul id="menu">
-                <li class="category"><a href="artwork.html">Galerie</a>
-                <li class="category"><a href="artwork.html">Projets</a>
-                <li class="category"><a href="artwork.html">Pixel arts</a>
-            </ul>
-            <!-- <button type="button" name="button" id = "buttonLast">PREVIOUS</button> -->
-            <div class="slider">
-                <div class="slides">
-                    <div class = "slide"><img src="./Images/art and science_3.png" alt=""></div>
-                    <div class = "slide"><img src="./Images/card.png" alt=""></div>
-                    <div class = "slide"><img src="./Images/chevalier.png" alt=""></div>
+        <header>
+            <h1>//Noé Terrier</h1>
+            <div class="main">
+                <ul id="menu">
+                    <li><a class="category" href="artwork.html">Galerie</a>
+                    <li><a class="category" href="artwork.html">Projets</a>
+                    <li><a class="category" href="artwork.html">Pixel arts</a>
+                </ul>
+                <div class="slider">
+                    <div class="slides">
+                        <div class = "slide"><img src="./Images/art and science_3.png" alt=""></div>
+                        <div class = "slide"><img src="./Images/card.png" alt=""></div>
+                        <div class = "slide"><img src="./Images/chevalier.png" alt=""></div>
+                    </div>
                 </div>
             </div>
             <ul id="contacts">
                 <li>
-                    <a href="https://www.instagram.com/noe_terrier/">
+                    <a class = "contacts_link" href="https://www.instagram.com/noe_terrier/">
                         <img class="logoImg" src="./ressources/instagram_logo.svg" alt="instagram"></img>
-                        <p>noe_terrier</p>
+                        <p class = "contacts_info">noe_terrier</p>
                     </a>
                 <li>
-                    <a href="https://www.gmail.com">
+                    <a class = "contacts_link" href="https://www.gmail.com">
                         <img class="logoImg" src="./ressources/mail.svg" alt="mail"></img>
-                        <p>terriernoe@gmail.com</p>
+                        <p class = "contacts_info">terriernoe@gmail.com</p>
                     </a>
             </ul>
-        </div>
+        </header>
     </body>
 </html>
