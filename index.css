@@ -1,0 +1,117 @@
+.main {
+    position: relative;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 100px 400px;
+    grid-column-gap: 15px;
+    grid-template-columns: 15% 70% 15%;
+ }
+
+ #menu {
+     grid-column: 2;
+     grid-row: 1;
+     padding: 0;
+     width: 100%;
+     display: inline-grid;
+     list-style-type: none;
+     grid-template-columns: 1fr 1fr 1fr;
+     letter-spacing: 3px;
+     text-align: center;
+ }
+
+ .category, .category:visited{
+     color: var(--first-color);
+     padding: 15px 20px;
+     font-size: 175%;
+     text-decoration: none;
+     border-radius: 30px;
+     transition: background-color 0.5s linear;
+     letter-spacing: 3px;
+     text-align: center;
+ }
+
+ .category:hover {
+   background-color: var(--first-color);
+   color: white;
+ }
+
+.slide img{
+    margin-top: -25%;
+    width: 100%;
+}
+
+.slider {
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+    width: min(1000px, 100%);
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: calc(3*1000px);
+    animation: glisse 15s infinite;
+}
+
+.slide {
+    float: left;
+    width: 1000px;
+}
+
+@keyframes glisse {
+        0 {
+            transform: translateX(0);
+        }
+        17% {
+            transform: translateX(0);
+        }
+        33% {
+            transform: translateX(-1000px);
+        }
+        50% {
+            transform: translateX(-1000px);
+        }
+        67% {
+            transform: translateX(-2000px);
+        }
+        83% {
+            transform: translateX(-2000px);
+        }
+        100% {
+            transform: translate(0);
+        }
+}
+#contacts {
+    position: absolute;
+    margin-top:50px;
+    width: 500px;
+    grid-row: 3;
+    list-style: none;
+}
+
+.contacts_info {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.1s linear;
+}
+
+.contacts_info:hover{
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.contacts_link{
+    display: inline-flex;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.logoImg {
+    width: 25px;
+    height: 25px;
+}
