@@ -12,35 +12,17 @@
     border-radius: 5px;
 }
 
-.backButton {
-    height: 30px;
-    width: 30px;
-    border: solid var(--first-color);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    transform: translateX(50px) rotate(135deg);
-    transition: border 0.05s ease;
-}
-
-.backButton a{
-    padding: 15px;
-}
-
-.backButton:hover{
-    border-width: 0 5px 5px 0;
-}
-
-
 .ImageTable {
-    background-color: #f5f3f3;
+    background-color: var(--second-color);
     margin: 0;
-    border: solid #f5f3f3;
+    border: solid var(--second-color);
     border-width: 0 50px 0 50px;
     display: grid;
     grid-row: 2;
     grid-column-gap: 5%;
     grid-template-columns: repeat(auto-fit,   minmax(300px, 1fr));
-    animation: fromDown 1s ease;
+    animation: fromDown1000 1s;
+
 }
 
 #left .img-selection{

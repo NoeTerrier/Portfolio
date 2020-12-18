@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.507946"
-     inkscape:cx="29.751857"
-     inkscape:cy="65.790891"
+     inkscape:zoom="9.015892"
+     inkscape:cx="-9.0684838"
+     inkscape:cy="38.283907"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2273"
      showgrid="false"
      inkscape:snap-page="true"
      inkscape:window-width="1920"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +60,8 @@
      transform="translate(0,-290.3854)">
     <g
        id="g2273"
-       transform="matrix(0.49999999,0,0,0.49999999,-0.0648427,290.31529)">
+       transform="matrix(0.49999999,0,0,0.49999999,-0.0648427,290.31529)"
+       style="stroke:#1a1a1a">
       <rect
          ry="3.0860255"
          rx="3.0860255"
@@ -69,15 +70,15 @@
          height="11.707203"
          width="11.707203"
          id="rect1673"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <circle
          r="2.4451749"
          cy="6.754797"
          cx="6.7442679"
          id="path1677"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#1a1a1a;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <circle
-         style="opacity:1;fill:#ffffff;fill-opacity:0.96470588;stroke:none;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#1a1a1a;fill-opacity:0.96470588;stroke:none;stroke-width:1.52196395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="circle1679"
          cx="9.7690105"
          cy="3.3320632"

@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="50"
-   height="50"
-   viewBox="0 0 13.229166 13.229167"
+   width="25"
+   height="25"
+   viewBox="0 0 6.614583 6.6145835"
    version="1.1"
    id="svg2903"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="15.714286"
-     inkscape:cy="36.046047"
+     inkscape:cx="1.1933431"
+     inkscape:cy="35.540971"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,10 +53,11 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-283.77082)">
+     transform="translate(0,-290.3854)">
     <g
        id="g3483"
-       transform="translate(0.4595035,-0.26362737)">
+       transform="matrix(0.49934905,0,0,0.49934905,0.2337584,148.55737)"
+       style="stroke:#1a1a1a">
       <rect
          ry="1.0295634"
          rx="1.0396907"
@@ -65,11 +66,11 @@
          height="8.1150818"
          width="11.811655"
          id="rect3448"
-         style="opacity:1;fill:none;fill-opacity:0.96470588;stroke:#ffffff;stroke-width:1.41751194;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:none;fill-opacity:0.96470588;stroke:#1a1a1a;stroke-width:1.41751194;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          id="rect3450"
          d="m 1.2897508,286.50743 c -0.52259423,0 -0.95000482,0.37738 -1.02856389,0.87237 0.0513675,0.15588 0.13724364,0.30413 0.26693335,0.42844 l 4.84735494,4.64619 c 0.4265132,0.40883 1.1096061,0.41162 1.5319653,0.007 l 4.8623465,-4.66022 c 0.161471,-0.15477 0.259259,-0.34626 0.296431,-0.54643 -0.125802,-0.43136 -0.521881,-0.74712 -0.999066,-0.74712 z"
-         style="opacity:1;fill:none;fill-opacity:0.96470588;stroke:#ffffff;stroke-width:1.42413974;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:none;fill-opacity:0.96470588;stroke:#1a1a1a;stroke-width:1.42413974;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          inkscape:connector-curvature="0" />
     </g>
   </g>
