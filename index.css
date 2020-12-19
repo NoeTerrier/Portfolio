@@ -13,7 +13,7 @@ h1 {
     align-items: center;
     grid-template-rows: 100px 400px;
     grid-column-gap: 15px;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 15% 1fr 15%;
  }
 
  #menu {
@@ -31,7 +31,7 @@ h1 {
      opacity: 0;
  }
 
- .category{
+ .menu_item{
      color: var(--first-color);
      padding: 15px 20px;
      font-size: 2rem;
@@ -42,11 +42,11 @@ h1 {
      text-transform: uppercase;
  }
 
- .category:hover {
+ .menu_item:hover {
      color: var(--second-color);
  }
 
-.category::after {
+.menu_item::after {
     content: "";
     position: absolute;
     left: 25%;
@@ -57,7 +57,7 @@ h1 {
     transition: width 0.2s linear;
 }
 
-.category:hover::after{
+.menu_item:hover::after{
     width: 50%;
 }
 
@@ -112,14 +112,28 @@ h1 {
 
 #contacts {
     margin-top:50px;
-    width: 500px;
+    width: 100%;
     list-style: none;
 }
 
 .contacts_link{
     display: inline-flex;
+    overflow: hidden;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+.contacts_link p{
+    margin: 0;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    color: var(--first-color);
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+}
+
+.contacts_link:hover p{
+    transform: translate(0);
 }
 
 .logo-img {
@@ -130,4 +144,16 @@ h1 {
 
 .logo-img:hover {
     transform : translateX(5px);
+}
+
+.end {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.signature {
+    margin: auto;
+    height: 50px;
+    grid-row: 1;
+    grid-column: 2;
 }

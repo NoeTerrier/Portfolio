@@ -4,6 +4,34 @@
     grid-template-rows: 300px;
 }
 
+#menu {
+    font-family:  'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: .9em;
+    line-height: 150%;
+    text-transform: uppercase;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 6em;
+}
+
+.menu_item {
+    color: var(--first-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: letter-spacing 0.2s;
+}
+
+.selected {
+    list-style-type: disc;
+}
+
+.menu_item:hover {
+    color: var(--second-color);
+    letter-spacing: .9em;
+}
+
 .column .img-selection {
     box-shadow: 0 0 0 200vw rgba(0, 0, 0, 0.5);
     width: 150%;
