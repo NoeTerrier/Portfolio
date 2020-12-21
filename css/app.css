@@ -14,11 +14,6 @@ body {
     margin: 0;
 }
 
-header {
-    width: 100%;
-    height: 100vh;
-}
-
 h1, h2 {
     color: var(--second-color);
     word-spacing: 100%;
@@ -54,7 +49,7 @@ p {
     align-items: center;
 }
 
-.backButton {
+.back-button {
     height: 30px;
     width: 30px;
     border: solid #f5d6b2;
@@ -65,11 +60,11 @@ p {
     transition: border 0s ease;
 }
 
-.backButton a{
+.back-button a{
     padding: 15px;
 }
 
-.backButton:hover{
+.back-button:hover{
     border-width: 0 7px 7px 0;
 }
 
@@ -80,11 +75,6 @@ p {
 
 @keyframes fromLeft {
     from {transform: translateX(20px)}
-    to {transform: translate(0)}
-}
-
-@keyframes fromUp {
-    from {transform: translateY(-20px)}
     to {transform: translate(0)}
 }
 
@@ -99,13 +89,55 @@ p {
     }
 }
 
-@keyframes fromDown1000 {
-    from {
-        opacity: 0;
-        transform: translateY(1000px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0);
-    }
+#contacts {
+    margin-top:50px;
+    width: 100%;
+    list-style: none;
+}
+
+.contacts_link{
+    display: inline-flex;
+    overflow: hidden;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contacts_link p{
+    margin: 0;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+    color: var(--first-color);
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+}
+
+.contacts_link:hover p{
+    transform: translate(0);
+}
+
+.logo-img {
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s;
+}
+
+.logo-img:hover {
+    transform : translateX(5px);
+}
+
+.end {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.signature {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    grid-row: 1;
+    grid-column: 2;
 }

@@ -12,13 +12,14 @@ h1 {
 }
 
 .main {
+    position: absolute;
     width: 100%;
-    background-color: var(--second-color);
     background: linear-gradient(#090a0f 0%, #1b2735 100%);
-    z-index: -2;
+    z-index: 0;
 }
 
 .stars {
+    position: absolute;
     border-radius: 50%;
     z-index: -1;
 }
@@ -51,27 +52,18 @@ h1 {
     color: var(--line-color);
 }
 
-.menu_item {
+.menu-item {
     color: var(--line-color);
 }
 
-.menu_item:hover {
+.menu-item:hover {
     color: white;
 }
 
 p {
-    /* color: var(--main-bg-color); */
     color: lightgrey;
     margin: 0;
     max-height: 100%;
-}
-
-.description_name {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: var(--main-bg-color);
-    text-transform: uppercase;
 }
 
 .intro {
@@ -113,6 +105,14 @@ p {
 
 .set_reverse .description {
     margin-right: 5%;
+}
+
+.description-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
 }
 
 .end {

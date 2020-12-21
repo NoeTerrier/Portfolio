@@ -2,26 +2,25 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./app.css">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-        <script src="indexAnimations.js" charset="utf-8" defer></script>
+        <script src="js/setNaviguationMenu.js" charset="utf-8" defer></script>
+        <script src="js/particles.js" charset="utf-8"></script>
         <title>Home</title>
     </head>
     <body>
-        <header>
             <div>
                 <div class="title">
                     <h1>//Noé Terrier</h1>
                 </div>
             </div>
+            <div class="particles" id = "particles-left"></div>
+            <div class="particles" id = "particles-midle"></div>
+            <div class="particles" id = "particles-right"></div>
             <div class="main">
-                <ul id="menu">
-                    <li><a class="menu_item" href="artwork.html">Gallery</a>
-                    <li><a class="menu_item" href="artwork.html">Projects</a>
-                    <li><a class="menu_item" href="about.html">about</a>
-                </ul>
+                <ul id="menu" data-location = "index"></ul>
                 <div class="slider">
                     <div class="slides">
                         <div class = "slide"><img src="./Images/hand.png" alt=""></div>
@@ -47,8 +46,7 @@
                             </div>
                         </a>
                 </ul>
-                <img src="./ressources/signature.png" alt="mark" class="signature">
+                <img src="./ressources/signature.png" alt="signature" class="signature">
             </div>
-        </header>
     </body>
 </html>

@@ -2,13 +2,13 @@
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./app.css">
-        <link rel="stylesheet" href="./artwork.css">
-        <link rel="stylesheet" href="./space.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/artwork.css">
+        <link rel="stylesheet" href="css/space.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-        <script src="indexAnimations.js" charset="utf-8" defer></script>
-        <script src="stars.js" charset="utf-8"></script>
+        <script src="js/setNaviguationMenu.js" charset="utf-8" defer></script>
+        <script src="js/stars.js" charset="utf-8"></script>
         <title>Space</title>
     </head>
     <body>
@@ -16,15 +16,10 @@
             <header>
                 <div>
                     <div class="title">
-                        <i class="backButton"><a href="artwork.html"></a></i>
+                        <i class="back-button"><a href="artwork.html"></a></i>
                         <h1>//Artwork</h1>
                     </div>
-                    <ul id="menu">
-                        <li class="selected"><a class="menu_item" href="space.html">Space</a></li>
-                        <li><a class="menu_item" href="space.html">Pixel art</a></li>
-                        <li><a class="menu_item" href="space.html">888</a></li>
-                        <li><a class="menu_item" href="space.html">APES</a></li>
-                    </ul>
+                    <ul id="menu" data-location = "space"></ul>
                 </div>
             </header>
             <div class="stars" id="stars-background"></div>
@@ -36,14 +31,14 @@
             <div class="set">
                 <img src="./Images/curiosity_alpha.png" alt="curiosity">
                 <div class="description">
-                    <p class="description_name">curiosity</p>
+                    <p class="description-name">curiosity</p>
                     <hr>
                     <p>Atterissage sur Mars: 6 Août 2012<br>Curiosity est un rover effectuant des mesures sur Mars dans le but de déterminer si la vie est possible sur la planète rouge</p>
                 </div>
             </div>
             <div class="set_reverse">
                 <div class="description">
-                    <p class="description_name">ISS</p>
+                    <p class="description-name">ISS</p>
                     <hr>
                     <p>Mise en service: 1998<br>L'International Space Station est un laboratoire en orbite à 400km au dessus de la surface de la Terre. C'est le plus grand objet artificiel en orbite (110m de longueur). </p>
                 </div>
@@ -52,13 +47,12 @@
             <div class="set">
                 <img src="./Images/voyager1_alpha.png" alt="voyager1">
                 <div class="description">
-                    <p class="description_name">Voyager 1</p>
+                    <p class="description-name">Voyager 1</p>
                     <hr>
                     <p>Lancement: 5 septembre 1977<br>Voyager 1 est l'une des deux sondes Voyager envoyées dans l'espace pour étudier les planètes du système solaire. C'est l'objets humain le plus éloigné de la Terre, à 22 milliards de kilomètres.</p>
                 </div>
             </div>
-            <div class="end">
-            </div>
+            <div class="end"></div>
         </div>
     </body>
 </html>

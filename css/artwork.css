@@ -1,5 +1,4 @@
 .main {
-    position: absolute;
     display: grid;
     grid-template-rows: 300px;
 }
@@ -7,6 +6,7 @@
 #menu {
     font-family:  'Roboto', sans-serif;
     font-weight: 300;
+    color: var(--first-color);
     letter-spacing: .9em;
     line-height: 150%;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
     margin-left: 6em;
 }
 
-.menu_item {
+.menu-item {
     color: var(--first-color);
     text-decoration: none;
     font-size: 1.5em;
@@ -27,7 +27,7 @@
     list-style-type: disc;
 }
 
-.menu_item:hover {
+.menu-item:hover {
     color: var(--second-color);
     letter-spacing: .9em;
 }
@@ -40,7 +40,7 @@
     border-radius: 5px;
 }
 
-.ImageTable {
+.image-table {
     background-color: var(--second-color);
     margin: 0;
     border: solid var(--second-color);
@@ -50,7 +50,17 @@
     grid-column-gap: 5%;
     grid-template-columns: repeat(auto-fit,   minmax(300px, 1fr));
     animation: fromDown1000 1s;
+}
 
+@keyframes fromDown1000 {
+    from {
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 #left .img-selection{

@@ -1,8 +1,3 @@
-header {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
 h1 {
     padding-left: 15%;
 }
@@ -15,6 +10,38 @@ h1 {
     grid-column-gap: 15px;
     grid-template-columns: 15% 1fr 15%;
  }
+
+ .particles {
+     position: absolute;
+     z-index: -1;
+     border-radius: 50%;
+     height: 4px;
+     width: 4px;
+     animation: movingParticules 10s infinite ease alternate;
+ }
+
+ #particles-left {
+     height: 6px;
+     width: 6px;
+     animation-direction: alternate-reverse;
+ }
+
+#particles-midle {
+    animation-delay: -5s;
+}
+
+#particles-right {
+    animation-delay: -3s;
+}
+
+@keyframes movingParticules {
+    from {
+        transform: rotate(-3deg);
+    }
+    to {
+        transform: rotate(3deg);
+    }
+}
 
  #menu {
      grid-column: 2;
@@ -31,7 +58,7 @@ h1 {
      opacity: 0;
  }
 
- .menu_item{
+ .menu-item{
      color: var(--first-color);
      padding: 15px 20px;
      font-size: 2rem;
@@ -42,11 +69,11 @@ h1 {
      text-transform: uppercase;
  }
 
- .menu_item:hover {
+.menu-item:hover {
      color: var(--second-color);
- }
+}
 
-.menu_item::after {
+.menu-item::after {
     content: "";
     position: absolute;
     left: 25%;
@@ -57,7 +84,7 @@ h1 {
     transition: width 0.2s linear;
 }
 
-.menu_item:hover::after{
+.menu-item:hover::after{
     width: 50%;
 }
 
@@ -108,52 +135,4 @@ h1 {
         100% {
             transform: translate(0);
         }
-}
-
-#contacts {
-    margin-top:50px;
-    width: 100%;
-    list-style: none;
-}
-
-.contacts_link{
-    display: inline-flex;
-    overflow: hidden;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.contacts_link p{
-    margin: 0;
-    margin-left: 0.5em;
-    font-size: 1.2em;
-    color: var(--first-color);
-    transform: translateY(100%);
-    transition: transform 0.2s ease;
-}
-
-.contacts_link:hover p{
-    transform: translate(0);
-}
-
-.logo-img {
-    width: 25px;
-    height: 25px;
-    transition: all 0.2s;
-}
-
-.logo-img:hover {
-    transform : translateX(5px);
-}
-
-.end {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.signature {
-    margin: auto;
-    height: 50px;
-    grid-row: 1;
-    grid-column: 2;
 }

@@ -18,12 +18,15 @@ function setup() {
 
 
 function placeStars(nbOfStars, elementId) {
-    background = document.getElementById(elementId);
+    var html = document.documentElement;
+    var height = Math.max( html.clientHeight, html.scrollHeight);
+    var background = document.getElementById(elementId);
     var string = ""
+
     for (var i = 0; i < nbOfStars; i++) {
         x = randint(screen.width);
-        y = randint(5000);
-        string += x + "px " + y + "px " + "#eee";
+        y = randint(height - 100) + 100; 
+        string += x + "px " + y + "px " + "#fff";
         if (i < nbOfStars - 1) {
             string += ", ";
         }
