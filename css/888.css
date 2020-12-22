@@ -1,0 +1,21 @@
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.element img {
+    width: 80%;
+}
+
+.image-table {
+    margin-top: 5%;
+    background-color: var(--main-bg-color);
+}
+
+.description {
+    width: 80%;
+    margin-bottom: 50%;
+}

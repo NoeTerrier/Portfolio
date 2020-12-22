@@ -1,4 +1,4 @@
-img {
+.set img, .set_reverse img {
     height: 100%;
     transition: height 0.3s ease;
 }
@@ -115,6 +115,6 @@ p {
     text-transform: uppercase;
 }
 
-.end {
-    height: 200px;
+.last {
+    margin-bottom: 10%;
 }

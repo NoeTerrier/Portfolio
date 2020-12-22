@@ -1,22 +1,20 @@
-img {
-    width: 100%;
-    padding-bottom: 2em;
-    grid-column: 2;
-    transition: all 0.5s ease;
-    z-index: 1;
-}
-
-img:hover {
-    width: 150%;
-    margin-left: -25%;
-}
 
 .images {
     display: grid;
     width: 100%;
+    grid-gap: 2%;
     justify-content: center;
     grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-columns: minmax(0px, 1fr) minmax(300px, 1fr) minmax(400px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) minmax(400px, 40%) minmax(27em, 1fr);
+    margin-bottom: 15%;
+}
+
+.images img {
+    width: 100%;
+    padding-bottom: 2em;
+    grid-column: 2;
+    transition: all 0.5s ease;
+    z-index: 0;
 }
 
 .description {
@@ -29,7 +27,6 @@ img:hover {
 }
 
 .description p {
-    padding-left: 5%;
     max-height: 15em;
     width: 100%;
     line-height: 200%;
@@ -57,4 +54,9 @@ img:hover {
     border-width: 0 4px 4px 0;
     transform: translateX(100%) rotate(-45deg);
     transition: border 0s ease;
+}
+
+.signature {
+    grid-column: 3;
+    margin-right: 10%;
 }

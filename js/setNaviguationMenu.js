@@ -23,7 +23,7 @@ function setup() {
     } else {
         pageList = [["space.html",      "space"],
                     ["pixel_art.html",  "pixel art"],
-                    ["logos.html",      "888"],
+                    ["888.html",      "888"],
                     ["logos.html",      "logos"]];
     }
 
