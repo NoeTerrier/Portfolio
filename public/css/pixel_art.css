@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(0.3turn, #aa5351, #5ba);
+    background: linear-gradient(0.3turn, #D81159, #A9AFD1);
+    background: linear-gradient(0.77turn, #EE4266, #77CBB9);
+    /* background: linear-gradient(0.25turn, #333, white); */
+    background-color: #469D88;
+}
+
+.contacts_link p{
+    color: var(--second-color);
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    animation: fall 15s infinite alternate;
+}
+
+@keyframes fall {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(100vw - 100%));
+    }
+}
+
+
+#menu {
+    color: var(--second-color);
+}
+
+.menu-item {
+    color: var(--second-color);
+}
+
+.images {
+    display: grid;
+    width: 100%;
+    grid-gap: 2%;
+    justify-content: center;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: minmax(0px, 1fr) minmax(400px, 40%) minmax(27em, 1fr);
+    margin-bottom: 15%;
+}
+
+.images img {
+    border: solid 0.5em white;
+    width: 100%;
+    margin-bottom: 2em;
+    grid-column: 2;
+    z-index: 0;
+}
+
+.description {
+    margin-left: 1em;
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    z-index: 0;
+}
+
+.description h2 {
+    font-size: 500;
+    color: var(--second-color);
+}
+
+.description p {
+    color: white;
+    max-height: 15em;
+    font-weight: 500;
+    width: 100%;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    font-size: min(100%, 5em);
+}
+
+.content {
+    transform: translateX(-100%);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.description:hover .content {
+    transform: translate(0);
+}
+
+.arrow {
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    border: solid #f5d6b2;
+    border-width: 0 4px 4px 0;
+    transform: translateX(80%) rotate(-45deg);
+    transition: border 0s ease;
+}
+
+.signature {
+    grid-column: 3;
+    margin-right: 10%;
+}
