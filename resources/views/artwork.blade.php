@@ -21,26 +21,13 @@
                 </div>
             </header>
             <div class="image-table">
-                <div class="column" id="left">
-                    <img src = "/Images/Titan.png" alt="titan">
-                    <img loading = "lazy" src="/Images/voyager1.png" alt="voyager">
-                    <img loading = "lazy" src="/Images/fenêtre.png" alt="window">
-                    <img loading = "lazy" src="/Images/chat_noir.png" alt="black_cat">
-                    <img loading = "lazy" src="/Images/jungle.png" alt="jungle">
+                @foreach ($imgsByColumns as $column => $imgs)
+                <div class="column" id = {{$column}}>
+                    @foreach ($imgs as $img)
+                        <img src="{{'/Images/'.$img.'.png'}}" alt="image">
+                    @endforeach
                 </div>
-                <div class="column" id="center">
-                    <img src = "/Images/curiosity.png" alt="voyager1">
-                    <img loading = "lazy" src="/Images/hand.png" alt="hand">
-                    <img loading = "lazy" src="/Images/art and science_3.png" alt="art and science">
-                    <img loading = "lazy" src="/Images/ISS.png" alt="ISS">
-                </div>
-                <div class="column" id="right">
-                    <img src = "/Images/cascade.png" alt="curiosity">
-                    <img loading = "lazy" src="/Images/chevalier.png" alt="chevalier">
-                    <img loading = "lazy" src="/Images/montagne.png" alt="voyager1">
-                    <img loading = "lazy" src="/Images/oiseau.png" alt="titan">
-                    <img loading = "lazy" src="/Images/chat_rose.png" alt="titan">
-                </div>
+                @endforeach
             </div>
         </div>
     </body>

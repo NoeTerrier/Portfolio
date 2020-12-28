@@ -24,7 +24,7 @@
                 <p>Mes influences sont principalement le monde du jeu vidéo, la science fiction qu'elle soit cinématographique ou littéraire, et le monde scientifique.</p>
             </div>
 
-            <img class="main-img" src="Images/curiosity_alpha.png" alt="">
+            <img class="main-img" src="/Images/curiosity_alpha.png" alt="">
         </div>
 
         <div class="end">
@@ -32,19 +32,19 @@
                 <li>
                     <a class = "" href="https://www.instagram.com/noe_terrier/">
                         <div class="contacts_link">
-                            <img class="logo-img" src="./ressources/instagram_logo.svg" alt="instagram"></img>
+                            <img class="logo-img" src="/resources/instagram_logo.svg" alt="instagram"></img>
                             <p>noe_terrier</p>
                         </div>
                     </a>
                 <li>
                     <a class = "contacts_link" href="mailto: terriernoe@gmail.com">
                         <div class="contacts_link">
-                            <img class="logo-img" src="./ressources/mail.svg" alt="mail"></img>
+                            <img class="logo-img" src="/resources/mail.svg" alt="mail"></img>
                             <p>terriernoe@mail.com</p>
                         </div>
                     </a>
             </ul>
-            <a href="index.html" class="signature"><img class="signature" src="./resources/signature.png" alt="signature"></a>
+            <a href="/portfolio" class="signature"><img class="signature" src="/resources/signature.png" alt="signature"></a>
         </div>
     </body>
 </html>

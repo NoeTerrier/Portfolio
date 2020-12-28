@@ -20,11 +20,5 @@
                 <ul id="menu" data-location = "logos"></ul>
             </div>
         </header>
-        <?php
-            $fileList = glob('/Images/*');
-            foreach($fileList as $filename){
-                echo "test", '<br>';
-            }
-         ?>
     </body>
 </html>

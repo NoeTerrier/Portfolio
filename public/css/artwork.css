@@ -1,6 +1,5 @@
 .main {
     display: grid;
-    grid-template-rows: 300px;
 }
 
 #menu {
@@ -81,7 +80,7 @@
     animation-duration: 1s;
 }
 
-.column img {
+.image-table img {
     width: 100%;
     margin-bottom : 10%;
     transition: all 0.2s ease;

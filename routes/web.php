@@ -22,7 +22,11 @@ Route::get('portfolio', function () {
 });
 
 Route::get('portfolio/artwork', function () {
-    return view('artwork');
+    $imgsByColumns = ['left'   => ["Titan", "voyager1", "fenêtre", "chat_noir", "jungle"],
+                      'center' => ["curiosity", "hand", "art and science_3", "ISS"],
+                      'right'  => ["cascade", "chevalier", "montagne", "oiseau", "chat_rose"]];
+
+    return view('artwork', compact('imgsByColumns'));
 });
 
 Route::get('portfolio/artwork/space', function () {
@@ -34,7 +38,12 @@ Route::get('portfolio/artwork/pixelArt', function () {
 });
 
 Route::get('portfolio/artwork/888', function () {
-    return view('888');
+    $series = ['amour chimique'     => ["chevalier", "chevalier", "chevalier"],
+               'gravité'            => ["chevalier", "chevalier", "chevalier"],
+               'longueur d\'onde'   => ["chevalier", "chevalier", "chevalier"],
+               'vie'                => ["chevalier", "chevalier", "chevalier"]];
+
+    return view('888', compact('series'));
 });
 
 Route::get('portfolio/artwork/logos', function () {
