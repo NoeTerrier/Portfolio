@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
         <script src="/js/setNaviguationMenu.js" charset="utf-8" defer></script>
         <script src="/js/particles.js" charset="utf-8"></script>
+        <script src="/js/carousel.js" charset="utf-8"></script>
         <title>Home</title>
     </head>
     <body>
@@ -21,13 +22,14 @@
             <div class="particles" id = "particles-right"></div>
             <div class="main">
                 <ul id="menu" data-location = "index"></ul>
+
                 <div class="slider">
-                    <div class="slides">
-                        <div class = "slide"><img src="/Images/hand.png" alt=""></div>
-                        <div class = "slide"><img src="/Images/chat_noir.png" alt=""></div>
-                        <div class = "slide"><img src="/Images/chevalier.png" alt=""></div>
+                    <div id = "slides">
+                        <div class = "slide"><img id = "first"></div>
+                        <div class = "slide"><img id = "nextI"></div>
                     </div>
                 </div>
+
             </div>
             <div class="end">
                 <ul id="contacts">

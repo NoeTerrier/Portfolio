@@ -88,51 +88,30 @@ h1 {
     width: 50%;
 }
 
-.slide img{
-    margin-top: -25%;
-    width: 100%;
-}
 
 .slider {
     margin: auto;
     grid-column: 2;
     grid-row: 2;
-    width: min(1000px, 100%);
+    width: min(60em, 100%);
     height: 400px;
     overflow: hidden;
     box-shadow: 12px 12px 24px 0px rgba(0,0,0,0.3);
 }
 
-.slides {
-    width: calc(3*1000px);
-    animation: glisse 15s infinite;
+#slides {
+    width: 200%;
+    height: 100%;
+    transition: transform 0s ease;
+    display: flex;
 }
 
 .slide {
     float: left;
-    width: 1000px;
+    width: 100%;
 }
 
-@keyframes glisse {
-        0 {
-            transform: translateX(0);
-        }
-        17% {
-            transform: translateX(0);
-        }
-        33% {
-            transform: translateX(-1000px);
-        }
-        50% {
-            transform: translateX(-1000px);
-        }
-        67% {
-            transform: translateX(-2000px);
-        }
-        83% {
-            transform: translateX(-2000px);
-        }
-        100% {
-            transform: translate(0);
-        }
+.slide img{
+    margin-top: -25%;
+    width: 100%;
 }

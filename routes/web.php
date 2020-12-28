@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ArtworkController;
+use App\Http\Controllers\Project888Controller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +24,7 @@ Route::get('portfolio', function () {
     return view('index');
 });
 
-Route::get('portfolio/artwork', function () {
-    $imgsByColumns = ['left'   => ["Titan", "voyager1", "fenêtre", "chat_noir", "jungle"],
-                      'center' => ["curiosity", "hand", "art and science_3", "ISS"],
-                      'right'  => ["cascade", "chevalier", "montagne", "oiseau", "chat_rose"]];
-
-    return view('artwork', compact('imgsByColumns'));
-});
+Route::get('portfolio/artwork', [ArtworkController::class, 'show']);
 
 Route::get('portfolio/artwork/space', function () {
     return view('space');
@@ -37,14 +34,7 @@ Route::get('portfolio/artwork/pixelArt', function () {
     return view('pixel_art');
 });
 
-Route::get('portfolio/artwork/888', function () {
-    $series = ['amour chimique'     => ["chevalier", "chevalier", "chevalier"],
-               'gravité'            => ["chevalier", "chevalier", "chevalier"],
-               'longueur d\'onde'   => ["chevalier", "chevalier", "chevalier"],
-               'vie'                => ["chevalier", "chevalier", "chevalier"]];
-
-    return view('888', compact('series'));
-});
+Route::get('portfolio/artwork/888', [Project888Controller::class, 'show']);
 
 Route::get('portfolio/artwork/logos', function () {
     return view('logos');
