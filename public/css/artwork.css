@@ -11,8 +11,8 @@
     text-transform: uppercase;
     overflow: hidden;
     list-style-type: none;
-    margin: 0;
-    margin-left: 6em;
+    margin: 0 0 1em 6em;
+
 }
 
 .menu-item {
@@ -40,7 +40,7 @@
 }
 
 .image-table {
-    background-color: var(--second-color);
+    background: linear-gradient(black 0, var(--second-color) 2em);
     padding: 0 50px 0 50px;
     display: grid;
     grid-row: 2;

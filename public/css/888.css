@@ -29,7 +29,7 @@ hr::after {
 
 .images {
     background-color: var(--second-color);
-    padding-bottom: 5%;
+    /* background: linear-gradient(0.25turn, var(--second-color) 0, var(--second-color-lighter) 15%, var(--second-color-lighter) 75%, var(--second-color) 100%); */
 }
 
 .image-table {
@@ -37,6 +37,7 @@ hr::after {
     background-color: var(--second-color);
     grid-auto-rows: fit-content(100%);
     grid-row-gap: 5em;
+    grid-column-gap: 1em;
     grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
     animation: none;
 }
@@ -45,6 +46,7 @@ hr::after {
     align-items: center;
     justify-content: center;
     display: grid;
+    margin-top: 1em;
 }
 
 .element img {
@@ -62,6 +64,7 @@ hr::after {
 }
 
 .description {
+    letter-spacing: 0.2em;
     margin: auto;
     text-align: center;
     font-weight: 500;
@@ -69,7 +72,7 @@ hr::after {
     grid-row: 2;
     opacity: 0;
     color: white;
-    width: 70%;
+    width: 75%;
     max-height: 20em;
     overflow-y: auto;
     transition: opacity 0.2s linear;
@@ -80,5 +83,11 @@ hr::after {
     z-index: 1;
 }
 
+.contacts_link p {
+    color: white;
+}
 
-/* php composer laravel*/
+.signature {
+    grid-column: 3;
+    margin-right: 5%;
+}

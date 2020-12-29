@@ -23,8 +23,8 @@ function setup() {
     } else {
         pageList = [["/portfolio/artwork/space",        "space"],
                     ["/portfolio/artwork/pixelArt",    "pixel art"],
-                    ["/portfolio/artwork/888",          "888"],
-                    ["/portfolio/artwork/logos",        "logos"]];
+                    ["/portfolio/artwork/888",          "888"]];
+                    // ["/portfolio/artwork/logos",        "logos"]];
     }
 
     i = 0;

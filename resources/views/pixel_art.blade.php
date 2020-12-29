@@ -57,7 +57,7 @@
                             </div>
                         </a>
                 </ul>
-                <a href="/portfolio" class="signature"><img class="signature" src="/resources/signature.png" alt="signature"></a>
+                <a href="/portfolio" class="signature"><img class="signature" src="/resources/signature_white.png" alt="signature"></a>
             </div>
         </div>
     </body>

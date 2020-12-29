@@ -8,7 +8,7 @@ class Project888Controller extends Controller
 {
     public function show() {
         $series = ['amour chimique'     => ["chevalier" => "\"On mourra toutes les nuits l'un dans les bras de l'autre, pendant que l'amour soufflera les braises de nos esprits inflammables.\"",
-                                            "fruit" => "Recette de l'amour: -dopamine \n-phényléthylamine \n-endorphines \n-ocytocine -adrénaline -noréphédrine -quelqu'un de bien.",
+                                            "fruit" => "Recette de l'amour: \n-dopamine \n-phényléthylamine \n-endorphines \n-ocytocine \n-adrénaline \n-noréphédrine \n-quelqu'un de bien.",
                                             "card" => "L'effet de l'amour sur le cerveau est semblable à celui que procure une drogue. Aimer libère de la dopamine dans le cerveau, qui active notre système de récompense et nous commande à en vouloir toujours plus."],
 
                    'gravité'            => ["chevalier" => "Les pulsars sont des objets qui tournent vite. Très vite. Plusieurs centaines de rotations par seconde. Le plus rapide connue est une étoile à neutron de 16km de rayon et 3 masses solaires qui effectue 716 rotations par secondes. De tels objets ont la propriété de faire vibrer l'espace et de nous faire parvenir des ondes dont l'existence a été prédite en 1916 par Albert Einstein: les ondes gravitationnelles.",

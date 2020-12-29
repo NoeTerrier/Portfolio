@@ -1,9 +1,8 @@
 body {
-    background: linear-gradient(0.3turn, #aa5351, #5ba);
+    /* background: linear-gradient(0.3turn, #aa5351, #5ba);
     background: linear-gradient(0.3turn, #D81159, #A9AFD1);
-    background: linear-gradient(0.77turn, #EE4266, #77CBB9);
-    /* background: linear-gradient(0.25turn, #333, white); */
-    background-color: #469D88;
+    background: linear-gradient(0.77turn, #EE4266, #77CBB9); */
+    background: linear-gradient(0.75turn, var(--second-color) 0, #131319 50%, #fff 50%);
 }
 
 .contacts_link p{
@@ -13,7 +12,7 @@ body {
 .square {
     width: 10px;
     height: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(125, 125, 150, 0.2);
     position: fixed;
     animation: fall 15s infinite alternate;
 }
@@ -66,7 +65,7 @@ body {
 
 .description h2 {
     font-size: 500;
-    color: var(--second-color);
+    color: var(--line-color);
 }
 
 .description p {
