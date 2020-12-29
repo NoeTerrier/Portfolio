@@ -24,7 +24,7 @@
                 @foreach ($imgsByColumns as $column => $imgs)
                 <div class="column" id = {{$column}}>
                     @foreach ($imgs as $img)
-                        <img src="{{'/Images/'.$img.'.png'}}" alt="image">
+                        <img src="{{'/images/'.$img.'.png'}}" alt="image">
                     @endforeach
                 </div>
                 @endforeach

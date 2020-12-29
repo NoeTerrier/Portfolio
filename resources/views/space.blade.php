@@ -29,7 +29,7 @@
                 <p class="intro_text">Cette courte série de 3 illustrations représente des objets humains emblématiques de l'exploration spatiale et des progrès technologiques des 50 dernières années.</p>
             </div>
             <div class="set">
-                <img src="/Images/curiosity_alpha.png" alt="curiosity">
+                <img src="/images/curiosity_alpha.png" alt="curiosity">
                 <div class="description">
                     <p class="description-name">curiosity</p>
                     <hr>
@@ -42,10 +42,10 @@
                     <hr>
                     <p>Mise en service: 1998<br>L'International Space Station est un laboratoire en orbite à 400km au dessus de la surface de la Terre. C'est le plus grand objet artificiel en orbite (110m de longueur). </p>
                 </div>
-                <img src="/Images/ISS_alpha.png" alt="ISS">
+                <img src="/images/ISS_alpha.png" alt="ISS">
             </div>
             <div class="set last">
-                <img src="/Images/voyager1_alpha.png" alt="voyager1">
+                <img src="/images/voyager1_alpha.png" alt="voyager1">
                 <div class="description">
                     <p class="description-name">Voyager 1</p>
                     <hr>

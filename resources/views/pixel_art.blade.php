@@ -25,7 +25,7 @@
             </header>
 
             <div class="images">
-                <img class="titan" src = "/Images/Titan.png" alt="titan">
+                <img class="titan" src = "/images/Titan.png" alt="titan">
                 <div class="description">
                     <div class="content">
                         <div>
@@ -36,9 +36,9 @@
                     </div>
                 </div>
 
-                <img loading = "lazy" src="/Images/chevalier.png" alt="curiosity">
-                <img loading = "lazy" src="/Images/oiseau.png" alt="titan">
-                <img loading = "lazy" src="/Images/oiseau.png" alt="titan">
+                <img loading = "lazy" src="/images/chevalier.png" alt="curiosity">
+                <img loading = "lazy" src="/images/oiseau.png" alt="titan">
+                <img loading = "lazy" src="/images/oiseau.png" alt="titan">
             </div>
             <div class="end">
                 <ul id="contacts">

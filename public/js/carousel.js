@@ -1,17 +1,17 @@
 window.addEventListener("load", setup);
 
 index = 0;
-const listOfImg = ["hand", "chat_noir", "chevalier"];
+const listOfImg = ["hand", "card","curiosity", "chevalier"];
 
 function setup() {
-    slides = document.getElementById("slides2");
+    slides = document.getElementById("slides");
     firstImg = document.getElementById("first");
     nextImg = document.getElementById("nextI");
 
     firstImg.src = sourceOf(listOfImg[0]);
     nextImg.src = sourceOf(listOfImg[0]);
 
-    setInterval(moveRight, 10000);
+    setInterval(moveRight, 7000);
 }
 
 
@@ -34,5 +34,5 @@ function nextIndexRight() {
 }
 
 function sourceOf(name) {
-    return ("/Images/" + name + ".png");
+    return ("/images/" + name + ".png");
 }

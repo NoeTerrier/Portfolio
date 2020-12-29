@@ -1,24 +1,84 @@
-.element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+h2 {
+    color: var(--line-color);
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
 }
 
-.element img {
+hr {
     width: 80%;
+    border: none;
+    border-top: solid;
+    border-color: var(--line-color);
+    border-width: 1px;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+hr::after {
+    position: relative;
+    content: "//";
+    border-width: 1px;
+    display: inline-block;
+    padding: 0 0.5em 0 0.5em;
+    top:  -0.7em;
+    background: var(--second-color);
+    color: var(--line-color);
+    font-size: 2em;
+}
+
+.images {
+    background-color: var(--second-color);
+    padding-bottom: 5%;
 }
 
 .image-table {
-    margin-top: 5%;
-    background-color: var(--main-bg-color);
+    margin: 2% 0 5% 0;
+    background-color: var(--second-color);
+    grid-auto-rows: fit-content(100%);
+    grid-row-gap: 5em;
+    grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
+    animation: none;
+}
+
+.element {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.element img {
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+    height: auto;
+    width: 80%;
+    transition: opacity 0.2s linear;
+}
+
+.element:hover img{
+    opacity: 0.1;
+    z-index: 0;
 }
 
 .description {
-    width: 80%;
-    margin-bottom: 50%;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    grid-column: 1;
+    grid-row: 2;
+    opacity: 0;
+    color: white;
+    width: 70%;
+    max-height: 20em;
+    overflow-y: auto;
+    transition: opacity 0.2s linear;
+}
 
+.element:hover .description {
+    opacity: 1;
+    z-index: 1;
+}
 
 
 /* php composer laravel*/

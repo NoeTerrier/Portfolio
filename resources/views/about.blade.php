@@ -24,7 +24,7 @@
                 <p>Mes influences sont principalement le monde du jeu vidéo, la science fiction qu'elle soit cinématographique ou littéraire, et le monde scientifique.</p>
             </div>
 
-            <img class="main-img" src="/Images/curiosity_alpha.png" alt="">
+            <img class="main-img" src="/images/curiosity_alpha.png" alt="">
         </div>
 
         <div class="end">

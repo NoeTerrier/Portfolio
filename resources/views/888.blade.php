@@ -17,16 +17,20 @@
                 </div>
                 <ul id="menu" data-location = "888"></ul>
             </header>
-            <div class="image-table">
-                @foreach ($series as $name => $imgs)
-                    @foreach ($imgs as $img)
-                        <div class="element">
-                            <h2>{{$name}}</h2>
-                            <img src="{{'/Images/'.$img.'.png'}}" alt="image">
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                <div class="images">
+                    @foreach ($series as $name => $imgs)
+                        <h2>{{$name}}</h2>
+                        <hr>
+                        <div class="image-table">
+                            @foreach ($imgs as $imgName => $text)
+                                <div class="element">
+                                    <img loading = "lazy" src="{{'/images/'.$imgName.'.png'}}" alt="image">
+                                    <p class="description">{{$text}}</p>
+                                </div>
+                            @endforeach
                         </div>
                     @endforeach
-                @endforeach
+                </div>
             </div>
         </div>
     </body>
