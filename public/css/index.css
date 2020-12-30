@@ -117,3 +117,8 @@ h1 {
     margin-top: -25%;
     width: 100%;
 }
+
+.signature {
+    grid-column: 2;
+    margin: auto;
+}

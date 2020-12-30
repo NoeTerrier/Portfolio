@@ -26,15 +26,6 @@ body {
     }
 }
 
-
-#menu {
-    color: var(--second-color);
-}
-
-.menu-item {
-    color: var(--second-color);
-}
-
 .images {
     display: grid;
     width: 100%;
@@ -98,9 +89,4 @@ body {
     border-width: 0 4px 4px 0;
     transform: translateX(80%) rotate(-45deg);
     transition: border 0s ease;
-}
-
-.signature {
-    grid-column: 3;
-    margin-right: 10%;
 }

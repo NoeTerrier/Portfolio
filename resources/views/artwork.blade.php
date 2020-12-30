@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
         <script src="/js/imgSelection.js"></script>
         <script src="/js/setNaviguationMenu.js" charset="utf-8"></script>
-        <title>Artwork</title>
+        <title>Noé Terrier - Artwork</title>
     <body>
         <div class="main">
             <header>

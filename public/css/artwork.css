@@ -40,7 +40,7 @@
 }
 
 .image-table {
-    background: linear-gradient(black 0, var(--second-color) 2em);
+    background: linear-gradient(#111 0, var(--second-color) 2em);
     padding: 0 50px 0 50px;
     display: grid;
     grid-row: 2;
@@ -83,5 +83,6 @@
 .image-table img {
     width: 100%;
     margin-bottom : 10%;
-    transition: all 0.2s ease;
+    transition: margin 0.2s, height 0.2s, width 0.2s;
+    box-shadow: 12px 12px 24px 0px rgba(0,0,0,0.5);
 }

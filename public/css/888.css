@@ -27,6 +27,32 @@ hr::after {
     font-size: 2em;
 }
 
+
+.presentation {
+    width: 100%;
+    background-color: var(--second-color);
+}
+
+.presentation p {
+    margin: auto;
+    color: var(--line-color);
+    text-align: center;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s;
+}
+
+.presentation:hover p {
+    height: 5em;
+    opacity: 1;
+}
+
+.presentation h2 {
+    margin: auto;
+    margin-top: 0.5em;
+    font-size: 3em;
+}
+
 .images {
     background-color: var(--second-color);
     /* background: linear-gradient(0.25turn, var(--second-color) 0, var(--second-color-lighter) 15%, var(--second-color-lighter) 75%, var(--second-color) 100%); */
@@ -81,13 +107,4 @@ hr::after {
 .element:hover .description {
     opacity: 1;
     z-index: 1;
-}
-
-.contacts_link p {
-    color: white;
-}
-
-.signature {
-    grid-column: 3;
-    margin-right: 5%;
 }
