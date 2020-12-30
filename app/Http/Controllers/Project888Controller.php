@@ -23,6 +23,10 @@ class Project888Controller extends Controller
                                             "fruit" => "recommence le cycle, la mère donne l'enfant, l'enfant devient mère, et ainsi",
                                             "card" => "recommence le cycle, la mère donne l'enfant, l'enfant devient mère, et ainsi"]];
 
-        return view('888', compact('series'));
+        $pageList = ["space"      => "/portfolio/artwork/space",
+                     "pixel art"  => "/portfolio/artwork/pixelArt",
+                     "888"        => "/portfolio/artwork/888"];
+
+        return view('888', compact('series', 'pageList'));
     }
 }

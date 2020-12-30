@@ -2,8 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArtworkController;
 use App\Http\Controllers\Project888Controller;
+use App\Http\Controllers\SpaceController;
+use App\Http\Controllers\PixelArtController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,19 +23,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('portfolio', function () {
-    return view('index');
-});
+Route::get('portfolio', [HomeController::class, 'show']);
 
 Route::get('portfolio/artwork', [ArtworkController::class, 'show']);
 
-Route::get('portfolio/artwork/space', function () {
-    return view('space');
-});
+Route::get('portfolio/artwork/space', [SpaceController::class, 'show']);
 
-Route::get('portfolio/artwork/pixelArt', function () {
-    return view('pixel_art');
-});
+Route::get('portfolio/artwork/pixelArt', [PixelArtController::class, 'show']);
 
 Route::get('portfolio/artwork/888', [Project888Controller::class, 'show']);
 

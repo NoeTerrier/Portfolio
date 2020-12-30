@@ -68,6 +68,58 @@ p {
     border-width: 0 7px 7px 0;
 }
 
+.main {
+    display: grid;
+}
+
+#menu {
+    color: var(--first-color);
+    letter-spacing: .9em;
+    line-height: 150%;
+    text-transform: uppercase;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0 0 1em 6em;
+
+}
+
+.menu-item {
+    color: var(--first-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: letter-spacing 0.2s;
+}
+
+.selected {
+    list-style-type: disc;
+}
+
+.menu-item:hover {
+    color: var(--second-color);
+    letter-spacing: .9em;
+}
+
+.image-table {
+    background: linear-gradient(#111 0, var(--second-color) 2em);
+    padding: 0 50px 0 50px;
+    display: grid;
+    grid-row: 2;
+    grid-column-gap: 5%;
+    grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
+    animation: fromDown1000 1s;
+}
+
+@keyframes fromDown1000 {
+    from {
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 @keyframes shade {
     from {opacity: 0}
     to {opacity: 100%}

@@ -6,7 +6,7 @@ const listOfImg = ["hand", "card","curiosity", "chevalier"];
 function setup() {
     slides = document.getElementById("slides");
     firstImg = document.getElementById("first");
-    nextImg = document.getElementById("nextI");
+    nextImg = document.getElementById("next");
 
     firstImg.src = sourceOf(listOfImg[0]);
     nextImg.src = sourceOf(listOfImg[0]);

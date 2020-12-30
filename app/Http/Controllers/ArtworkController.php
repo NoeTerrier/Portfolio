@@ -12,6 +12,10 @@ class ArtworkController extends Controller
                           'center' => ["curiosity", "hand", "art and science_3", "ISS"],
                           'right'  => ["cascade", "chevalier", "montagne", "oiseau", "chat_rose"]];
 
-        return view('artwork', compact('imgsByColumns'));
+        $pageList = ["space"      => "/portfolio/artwork/space",
+                     "pixel art"  => "/portfolio/artwork/pixelArt",
+                     "888"        => "/portfolio/artwork/888"];
+
+        return view('artwork', compact('imgsByColumns', 'pageList'));
     }
 }
