@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArtworkController;
 use App\Http\Controllers\Project888Controller;
 use App\Http\Controllers\SpaceController;
@@ -37,6 +38,4 @@ Route::get('portfolio/artwork/logos', function () {
     return view('logos');
 });
 
-Route::get('portfolio/about', function () {
-    return view('about');
-});
+Route::get('portfolio/about', [AboutController::class, 'show']);

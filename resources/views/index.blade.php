@@ -19,7 +19,6 @@
 @endsection
 
 @section('content')
-
     <div class="slider">
         <div id = "slides">
             <div class = "slide"><img id = "first"></div>

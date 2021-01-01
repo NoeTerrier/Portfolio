@@ -1,15 +1,25 @@
 .presentation {
     margin-top: 5%;
-    margin-left: 20%
+    margin-left: 10%;
 }
 
 .main-img {
     width: 40%;
-    height: 40%;
     margin-left: 5%;
 }
 
 .content {
     display: inline-flex;
     align-items: center;
+}
+
+/* ===========END=========== */
+
+.contacts_link p {
+    color: var(--second-color);
+}
+
+.signature {
+    grid-column: 2;
+    margin: auto;
 }

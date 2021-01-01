@@ -8,38 +8,7 @@ h1 {
     justify-content: center;
  }
 
- .particles {
-     position: absolute;
-     z-index: -1;
-     border-radius: 50%;
-     height: 5px;
-     width: 5px;
-     animation: movingParticules 10s infinite ease alternate;
- }
-
- #particles-left {
-     height: 10px;
-     width: 10px;
-     animation-direction: alternate-reverse;
- }
-
-#particles-midle {
-    animation-delay: -5s;
-}
-
-#particles-right {
-    animation-delay: -3s;
-}
-
-@keyframes movingParticules {
-    from {
-        transform: rotate(-3deg);
-    }
-    to {
-        transform: rotate(3deg);
-    }
-}
-
+/* ===========MENU=========== */
 .menu-div {
     width: 100%;
     display: flex;
@@ -47,7 +16,7 @@ h1 {
     justify-content: center;
 }
 
- #menu {
+#menu {
      width:  min(60em, 80%);
      display: inline-grid;
      list-style-type: none;
@@ -58,7 +27,7 @@ h1 {
      padding: 2em 0 1em 0;
  }
 
- .menu-item{
+.menu-item{
      font-size: 2rem;
      transition: color 0.1s linear;
      letter-spacing: 3px;
@@ -116,6 +85,8 @@ h1 {
     margin-top: -25%;
     width: 100%;
 }
+
+/* ===========END=========== */
 
 .contacts_link p {
     color: var(--second-color);

@@ -72,6 +72,7 @@ p {
     display: grid;
 }
 
+/* ===========MENU=========== */
 #menu {
     color: var(--first-color);
     letter-spacing: .9em;
@@ -109,6 +110,41 @@ p {
     animation: fromDown1000 1s;
 }
 
+
+/* ===========PARTICLES=========== */
+.particles {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    animation: movingParticules 10s infinite ease alternate;
+}
+
+#particles-left {
+     height: 10px;
+     width: 10px;
+     animation-direction: alternate-reverse;
+ }
+
+#particles-midle {
+    animation-delay: -5s;
+}
+
+#particles-right {
+    animation-delay: -3s;
+}
+
+@keyframes movingParticules {
+    from {
+        transform: rotate(-3deg);
+    }
+    to {
+        transform: rotate(3deg);
+    }
+}
+
+
 @keyframes fromDown1000 {
     from {
         opacity: 0;
@@ -139,6 +175,16 @@ p {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+/* ===========END=========== */
+.end {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #contacts {
@@ -175,15 +221,6 @@ p {
 
 .logo-img:hover {
     transform : translateX(5px);
-}
-
-.end {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .signature {

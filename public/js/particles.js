@@ -11,7 +11,7 @@ window.addEventListener(
 );
 
 function setup() {
-    var nbOfParticules = 50;
+    var nbOfParticules = 40;
     var html = document.documentElement;
     var height = Math.max( html.clientHeight, html.scrollHeight);
     var backgrounds = document.getElementsByClassName("particles");
