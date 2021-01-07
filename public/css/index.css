@@ -96,3 +96,33 @@ h1 {
     grid-column: 2;
     margin: auto;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0 1em 0;
+    }
+
+    .end {
+        background-color: inherit;
+    }
+
+    .slider {
+        height: 100%;
+    }
+
+    .slide img{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .menu-item{
+         font-size: 1.5rem;
+     }
+
+     .menu-item:hover::after{
+         width: 0;
+     }
+}

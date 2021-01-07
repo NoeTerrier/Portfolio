@@ -15,10 +15,10 @@
 
 @section('content')
     <div class="image-table">
-        @foreach ($imgsByColumns as $column => $imgs)
+        @foreach ($columns as $column => $imgs)
             <div class="column" id = {{$column}}>
                 @foreach ($imgs as $img)
-                    <img src="{{'/images/'.$img.'.png'}}" alt="image">
+                    <img src="{{$img->url}}" alt={{$img->name}}>
                 @endforeach
             </div>
         @endforeach

@@ -31,7 +31,6 @@ body {
     width: 100%;
     grid-gap: 2%;
     justify-content: center;
-    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-columns: minmax(0px, 1fr) minmax(400px, 40%) minmax(27em, 1fr);
     margin-bottom: 15%;
 }
@@ -89,4 +88,29 @@ body {
     border-width: 0 4px 4px 0;
     transform: translateX(80%) rotate(-45deg);
     transition: border 0s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .images img {
+        width: 80%;
+        margin: auto;
+    }
+
+    body {
+        background: white;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .end {
+        background-color: inherit;
+    }
 }

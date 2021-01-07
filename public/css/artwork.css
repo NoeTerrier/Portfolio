@@ -36,3 +36,32 @@
     transition: margin 0.2s, height 0.2s, width 0.2s;
     box-shadow: 12px 12px 24px 0px rgba(0,0,0,0.5);
 }
+
+
+@media only screen and (max-width: 600px) {
+    .image-table {
+        padding: 10% 10% 0 10%;
+    }
+
+    .column {
+        padding-top: 0;
+    }
+
+    .column .img-selection {
+        box-shadow: none;
+        width: 100%
+        border-radius: 0;
+    }
+
+    #left .img-selection{
+        margin-left: 0;
+    }
+
+    #right .img-selection{
+        margin-left: 0;
+    }
+
+    #center .img-selection{
+        margin-left: 0;
+    }
+}

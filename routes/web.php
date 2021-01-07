@@ -20,9 +20,7 @@ use App\Http\Controllers\PixelArtController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'show']);
 
 Route::get('portfolio', [HomeController::class, 'show']);
 

@@ -15,6 +15,10 @@
 
 /* ===========END=========== */
 
+.end {
+    position: relative;
+}
+
 .contacts_link p {
     color: var(--second-color);
 }
@@ -22,4 +26,20 @@
 .signature {
     grid-column: 2;
     margin: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .end {
+        background-color: inherit;
+    }
+
+    .main-img {
+        display: none;
+    }
+
+    .presentation {
+        margin-right: 10%;
+        background-color: ;
+    }
 }
