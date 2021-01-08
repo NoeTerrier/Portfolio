@@ -34,5 +34,5 @@ function nextIndexRight() {
 }
 
 function sourceOf(name) {
-    return ("/images/" + name + ".png");
+    return ("/images/" + name + ".jpg");
 }

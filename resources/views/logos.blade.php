@@ -1,6 +1,6 @@
 @extends('artworkLayout')
 
-@section('name')    
+@section('name')
     <!-- <link rel="stylesheet" href="/css/logos.css"> -->
-    <title>Logos</title>
+    <title>Noé Terrier - Logos</title>
 @endsection

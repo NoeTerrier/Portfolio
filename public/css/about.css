@@ -1,6 +1,7 @@
 .presentation {
     margin-top: 5%;
     margin-left: 10%;
+    background-color: var(--main-bg-color);
 }
 
 .main-img {

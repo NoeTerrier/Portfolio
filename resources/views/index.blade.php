@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/particles.js" charset="utf-8"></script>
     <script src="/js/carousel.js" charset="utf-8"></script>
-    <title>Home</title>
+    <title>Noé Terrier</title>
 @endsection
 
 @section('title')

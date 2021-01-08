@@ -3,7 +3,7 @@
 @section('head')
     <link rel="stylesheet" href="/css/about.css">
     <script src="/js/particles.js" charset="utf-8"></script>
-    <title>About</title>
+    <title>Noé Terrier - About</title>
 @endsection
 
 @section('title')

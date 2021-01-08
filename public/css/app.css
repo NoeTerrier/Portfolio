@@ -108,6 +108,7 @@ p {
     grid-column-gap: 5%;
     grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
     animation: fromDown1000 1s;
+    align-items: center;
 }
 
 

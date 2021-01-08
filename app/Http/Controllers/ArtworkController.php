@@ -10,27 +10,20 @@ class ArtworkController extends Controller
 {
 
     public function show() {
-        $column_right = DB::table('imagesPerZone')
-                    ->join('imagesData', 'id_image', '=', 'imagesData.id')
-                    ->join('zones', 'id_zone', '=', 'zones.id')
-                    ->where('label', 'column_right')
-                    ->get();
 
-        $column_center = DB::table('imagesPerZone')
-                    ->join('imagesData', 'id_image', '=', 'imagesData.id')
-                    ->join('zones', 'id_zone', '=', 'zones.id')
-                    ->where('label', 'column_center')
-                    ->get();
 
-        $column_left = DB::table('imagesPerZone')
-                    ->join('imagesData', 'id_image', '=', 'imagesData.id')
-                    ->join('zones', 'id_zone', '=', 'zones.id')
-                    ->where('label', 'column_left')
-                    ->get();
 
-        $columns = ['left'   => $column_left,
-                    'center' => $column_center,
-                    'right'  => $column_right];
+        $columns = ['left'   => 'column_left',
+                    'center' => 'column_center',
+                    'right'  => 'column_right'];
+
+        foreach ($columns as $key => $value) {
+            $columns[$key] = DB::table('imagesPerZone')
+                        ->join('imagesData', 'id_image', '=', 'imagesData.id')
+                        ->join('zones', 'id_zone', '=', 'zones.id')
+                        ->where('label', $value)
+                        ->get();
+        }
 
         $pageList = ["space"      => "/portfolio/artwork/space",
                      "pixel art"  => "/portfolio/artwork/pixelArt",

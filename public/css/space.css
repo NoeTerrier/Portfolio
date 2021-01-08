@@ -91,6 +91,7 @@ p {
 }
 
 .set_reverse {
+    flex-direction: row-reverse;
     text-align: right;
     margin-right: 10%;
     margin-left: auto;

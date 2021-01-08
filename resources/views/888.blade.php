@@ -12,14 +12,14 @@
     </div>
 
     <div class="images">
-        @foreach ($series as $name => $imgs)
-            <h2>{{$name}}</h2>
+        @foreach ($series as $serieName => $imgs)
+            <h2>{{$serieName}}</h2>
             <hr>
             <div class="image-table">
-                @foreach ($imgs as $imgName => $text)
+                @foreach ($imgs as $img)
                     <div class="element">
-                        <img loading = "lazy" src="{{'/images/'.$imgName.'.png'}}" alt="image">
-                        <p class="description">{{$text}}</p>
+                        <img loading = "lazy" src={{$img->url}} alt={{$img->name}}>
+                        <p class="description">{{$img->description}}</p>
                     </div>
                 @endforeach
             </div>

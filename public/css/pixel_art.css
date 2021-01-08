@@ -1,7 +1,4 @@
 body {
-    /* background: linear-gradient(0.3turn, #aa5351, #5ba);
-    background: linear-gradient(0.3turn, #D81159, #A9AFD1);
-    background: linear-gradient(0.77turn, #EE4266, #77CBB9); */
     background: linear-gradient(0.75turn, var(--second-color) 0, #131319 50%, #fff 50%);
 }
 
