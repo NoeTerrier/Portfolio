@@ -26,13 +26,3 @@
         </div>
     </div>
 @endsection
-
-@section('img-instagram')
-    <img class="logo-img" src="/resources/instagram_logo.svg" alt="instagram"></img>
-@endsection
-@section('img-mail')
-    <img class="logo-img" src="/resources/mail.svg" alt="mail"></img>
-@endsection
-@section('img-signature')
-    <img class="signature" src="/resources/signature.png" alt="signature">
-@endsection

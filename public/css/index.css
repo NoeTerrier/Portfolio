@@ -93,6 +93,7 @@ h1 {
 }
 
 .signature {
+    background-color: var(--second-color);
     grid-column: 2;
     margin: auto;
 }

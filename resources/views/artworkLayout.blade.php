@@ -39,29 +39,20 @@
                     <li>
                         <a class = "" href="https://www.instagram.com/noe_terrier/">
                             <div class="contacts_link">
-                                @section('img-instagram')
-                                    <img class="logo-img" src="/resources/instagram_logo_white.svg" alt="instagram"></img>
-                                @endsection
-                                @yield('img-instagram')
+                                    <span class="logo-img logo-insta"></span>
                                 <p>noe_terrier</p>
                             </div>
                         </a>
                     <li>
                         <a class = "contacts_link" href="mailto: terriernoe@gmail.com">
                             <div class="contacts_link">
-                                @section('img-mail')
-                                    <img class="logo-img" src="/resources/mail_white.svg" alt="mail"></img>
-                                @endsection
-                                @yield('img-mail')
+                                    <span class="logo-img logo-mail"></span>
                                 <p>terriernoe@mail.com</p>
                             </div>
                         </a>
                 </ul>
                 <a href="/portfolio" class="signature">
-                    @section('img-signature')
-                        <img class="signature" src="/resources/signature_white.png" alt="signature">
-                    @endsection
-                    @yield('img-signature')
+                    <span class="img-signature"></span>
                 </a>
             </div>
         </div>

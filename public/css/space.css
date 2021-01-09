@@ -63,7 +63,6 @@ p {
 
 .intro {
     display: flex;
-    /* grid-template-columns: 1fr auto 1fr; */
 }
 
 .intro_text {
@@ -99,6 +98,10 @@ p {
 
 .set_reverse .description {
     margin-right: 5%;
+}
+
+.logo-img {
+    background-color: var(--main-bg-color);
 }
 
 .description-name {

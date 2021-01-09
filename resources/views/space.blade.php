@@ -23,7 +23,13 @@
             <div class="description">
                 <p class="description-name">{{$img->name}}</p>
                 <hr>
-                <p>{{$img->description}}</p>
+                @php ($descriptions = explode('\n', $img->description))
+                <p>
+                    @foreach ($descriptions as $text)
+                        {{$text}}
+                        <br>
+                    @endforeach
+                </p>
             </div>
         </div>
         @php ($i += 1)

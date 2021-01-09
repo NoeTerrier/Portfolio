@@ -1,0 +1,96 @@
+.main {
+    background-color: #16141D;
+}
+
+header {
+    position: absolute;
+}
+
+.line {
+    width: 1px;
+    height: 20%;
+    border: none;
+    background-color: var(--line-color);
+    margin: 10% 0 0 8%;
+}
+
+
+h1 {
+    color: var(--main-bg-color);
+}
+
+#menu {
+    color: var(--line-color);
+}
+
+.menu-item {
+    color: var(--line-color);
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+.ascii-art-project {
+    display: flex;
+    align-items: center;
+}
+
+.pearl {
+    height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.pearl img {
+    height: 150%;
+    margin-top: -10%;
+}
+
+.logo-img {
+    background-color: var(--main-bg-color);
+}
+
+.description, .infos {
+    color: lightgrey;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+
+.description {
+    font-size: 1.3em;
+    margin: 10% 0 0 1em;
+}
+
+.interface {
+    background: radial-gradient(#aaa, #111);
+    display: flex;
+    flex-direction: column;
+    height: max(100vh, 100%);
+    background-color: var(--first-color);
+}
+
+.interface-img {
+    width: 80%;
+    margin: 0 auto 5% auto;
+}
+
+.infos {
+    align-items: center;
+    margin: 2em auto 1em auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+}
+
+.info {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info a {
+    color: lightgrey;
+}

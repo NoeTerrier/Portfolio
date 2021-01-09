@@ -19,7 +19,15 @@
                     <div class="content">
                         <div>
                             <h2>{{$img->name}}</h2>
-                            <p>{{$img->description}}</p>
+                            <p>
+                                @php ($descriptions = explode('\n', $img->description))
+                                <p>
+                                    @foreach ($descriptions as $text)
+                                        {{$text}}
+                                        <br>
+                                    @endforeach
+                                </p>
+                            </p>
                         </div>
                         <i class="arrow"></i>
                     </div>
@@ -27,11 +35,4 @@
             @endif
         @endforeach
     </div>
-@endsection
-
-@section('img-instagram')
-    <img class="logo-img" src="/resources/instagram_logo.svg" alt="instagram"></img>
-@endsection
-@section('img-mail')
-    <img class="logo-img" src="/resources/mail.svg" alt="mail"></img>
 @endsection

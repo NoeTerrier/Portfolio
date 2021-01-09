@@ -109,3 +109,7 @@ hr::after {
     opacity: 1;
     z-index: 1;
 }
+
+.logo-img {
+    background-color: var(--main-bg-color);
+}

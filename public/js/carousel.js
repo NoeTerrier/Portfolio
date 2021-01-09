@@ -1,7 +1,7 @@
 window.addEventListener("load", setup);
 
 index = 0;
-const listOfImg = ["hand", "card","curiosity", "chevalier"];
+const listOfImg = ["hand", "card", "astronaute", "curiosity", "chevalier"];
 
 function setup() {
     slides = document.getElementById("slides");

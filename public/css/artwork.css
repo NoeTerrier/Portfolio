@@ -38,6 +38,9 @@
     box-shadow: 12px 12px 24px 0px rgba(0,0,0,0.5);
 }
 
+.logo-img {
+    background-color: var(--main-bg-color);
+}
 
 @media only screen and (max-width: 600px) {
     .image-table {
