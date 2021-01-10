@@ -6,17 +6,16 @@ header {
     position: absolute;
 }
 
+h1 {
+    color: var(--main-bg-color);
+}
+
 .line {
     width: 1px;
     height: 20%;
     border: none;
     background-color: var(--line-color);
     margin: 10% 0 0 8%;
-}
-
-
-h1 {
-    color: var(--main-bg-color);
 }
 
 #menu {
@@ -93,4 +92,41 @@ h1 {
 
 .info a {
     color: lightgrey;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .ascii-art-project {
+        flex-direction: column;
+    }
+
+    .description {
+        margin: 5%;
+    }
+
+    .pearl img {
+        height: auto;
+        width: 80%;
+        margin: auto;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .pearl {
+        height: auto;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interface {
+        height: auto;
+    }
 }
