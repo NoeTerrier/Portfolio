@@ -104,7 +104,8 @@ p {
     display: grid;
     grid-row: 2;
     grid-column-gap: 5%;
-    grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
+    /* grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
     animation: fromDown1000 1s;
     align-items: center;
 }
@@ -214,10 +215,12 @@ p {
 
 .logo-insta {
     mask: url("/resources/instagram_logo.svg");
+    -webkit-mask: url("/resources/instagram_logo.svg");
 }
 
 .logo-mail {
     mask: url("/resources/mail.svg");
+    -webkit-mask: url("/resources/mail.svg");
 }
 
 .logo-img {
@@ -239,6 +242,8 @@ p {
     margin-right: 5%;
     mask: url("/resources/signature.svg");
     mask-size: cover;
+    -webkit-mask: url("/resources/signature.svg");
+    -webkit-mask-size: cover; 
     background-color: var(--main-bg-color);
 }
 

@@ -56,7 +56,6 @@ hr::after {
 
 .images {
     background-color: var(--second-color);
-    /* background: linear-gradient(0.25turn, var(--second-color) 0, var(--second-color-lighter) 15%, var(--second-color-lighter) 75%, var(--second-color) 100%); */
 }
 
 .image-table {
@@ -65,7 +64,7 @@ hr::after {
     grid-auto-rows: fit-content(100%);
     grid-row-gap: 5em;
     grid-column-gap: 1em;
-    grid-template-columns: repeat(auto-fit,   minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit,   minmax(20em, 1fr));
     animation: none;
 }
 
