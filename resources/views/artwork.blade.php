@@ -14,6 +14,7 @@
 @endsection
 
 @section('content')
+    <span class="black-rect"></span>
     <div class="image-table">
         @foreach ($columns as $column => $imgs)
             <div class="column" id = {{$column}}>

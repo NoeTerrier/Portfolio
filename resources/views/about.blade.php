@@ -22,9 +22,9 @@
             <h2>Noé Terrier</h2>
             <p>Étudiant en informatique à l'EPFL - 19 ans</p>
             <hr>
-            <p>J'aime apprendre et expérimenter pour créer.<br>Je suis autodidacte: j'ai appris le dessin digital sur internet, et en observant les techniques et les réalistation d'artistes confirmés et d'étudiants en art.</p>
-            <p>J'utilise plusieurs techniques: digital painting, le dessin vectoriel, le pixel art, la programmation, etc. J'aime avoir des approches différentes pour créer des choses.</p>
-            <p>Mes influences sont principalement le monde du jeu vidéo, la science fiction qu'elle soit cinématographique ou littéraire, et le monde scientifique.</p>
+            <p>J'aime apprendre et exprérimenter pour créer.<br>Autodidacte, j'ai appris le dessin digital sur internet et en suivant des artistes professionels.</p>
+            <p>J'utilise plusieurs techniques: digital painting, le dessin vectoriel, le pixel art, la programmation, ... <br>C'est important d'avoir des approches différentes pour créer des choses.</p>
+            <p>Je m'inspire principalement des jeux vidéos, de la science fiction, et du monde scientifique: ce sont des univers très riches.</p>
         </div>
 
         <img class="main-img" src="/images/curiosity_alpha.png" alt="">
