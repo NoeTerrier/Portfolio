@@ -18,7 +18,7 @@
                 <div class="description">
                     <div class="content">
                         <div>
-                            <h2>{{$img->name}}</h2>
+                            <h3>{{$img->name}}</h3>
                             <p>
                                 @php ($descriptions = explode('\n', $img->description))
                                 <p>

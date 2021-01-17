@@ -50,7 +50,7 @@ body {
     z-index: 0;
 }
 
-.description h2 {
+.description h3 {
     font-size: 500;
     color: var(--line-color);
 }
