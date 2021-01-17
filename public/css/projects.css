@@ -4,18 +4,11 @@
 
 header {
     position: absolute;
+    z-index: 10;
 }
 
-h1 {
+h1, h2 {
     color: var(--main-bg-color);
-}
-
-.line {
-    width: 1px;
-    height: 20%;
-    border: none;
-    background-color: var(--line-color);
-    margin: 10% 0 0 8%;
 }
 
 #menu {
@@ -33,9 +26,11 @@ h1 {
 .ascii-art-project {
     display: flex;
     align-items: center;
+    position: fixed;
 }
 
 .pearl {
+    position: relative;
     height: 100vh;
     margin-right: 0;
     margin-left: auto;
@@ -47,10 +42,6 @@ h1 {
     margin-top: -10%;
 }
 
-.logo-img {
-    background-color: var(--main-bg-color);
-}
-
 .description, .infos {
     color: lightgrey;
     letter-spacing: 0.2em;
@@ -58,40 +49,52 @@ h1 {
 }
 
 .description {
+    border-left: solid 1px var(--line-color);
+    padding-left: 1em;
     font-size: 1.3em;
-    margin: 10% 0 0 1em;
+    margin: 10% 0 0 10%;
 }
 
 .interface {
-    background: radial-gradient(#aaa, #111);
+    margin-top: 100vh;
+    z-index: 0;
+    background-color: var(--line-color);
     display: flex;
-    flex-direction: column;
-    height: max(100vh, 100%);
-    background-color: var(--first-color);
+    flex-direction: line;
+    height: 100vh;
+    overflow: auto;
 }
 
 .interface-img {
-    width: 80%;
-    margin: 0 auto 5% auto;
+    height: 90%;
+    margin: auto;
+    margin-left: 5em;
+    padding-right: 5em;
 }
 
 .infos {
-    align-items: center;
-    margin: 2em auto 1em auto;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    margin: auto;
+    margin-left: 10em;
+    list-style-type: decimal-leading-zero;
+    line-height: 3em;
 }
 
 .info {
-    font-size: 1.5em;
-    margin: auto;
+    font-size: 6em;
     text-align: center;
     text-transform: uppercase;
+    color: white;
+    margin-bottom: 1em;
+
 }
 
-.info a {
-    color: lightgrey;
+.info a, .info p {
+    font-size: 1.5rem;
+    color: #16141D;
+}
+
+.logo-img {
+    background-color: var(--main-bg-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -101,6 +104,7 @@ h1 {
 
     .ascii-art-project {
         flex-direction: column;
+        position: relative;
     }
 
     .description {
@@ -121,12 +125,29 @@ h1 {
         height: auto;
     }
 
+    .info {
+        font-size: 2em;
+    }
+
     .infos {
-        display: flex;
-        flex-direction: column;
+        line-height: normal;
+        margin: 1em;
     }
 
     .interface {
+        margin-top: 0;
         height: auto;
+        flex-direction: column;
+    }
+
+    .interface-img {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .end {
+        background-color: var(--line-color);
     }
 }

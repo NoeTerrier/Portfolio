@@ -1,4 +1,4 @@
-h2 {
+h3 {
     color: var(--line-color);
     margin: auto;
     margin-top: 2%;
@@ -109,6 +109,7 @@ hr::after {
     z-index: 1;
 }
 
+/* ===========END=========== */
 .logo-img {
     background-color: var(--main-bg-color);
 }

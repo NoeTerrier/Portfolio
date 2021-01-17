@@ -100,10 +100,6 @@ p {
     margin-right: 5%;
 }
 
-.logo-img {
-    background-color: var(--main-bg-color);
-}
-
 .description-name {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -112,8 +108,9 @@ p {
     text-transform: uppercase;
 }
 
-.last {
-    margin-bottom: 10%;
+/* ===========END=========== */
+.logo-img {
+    background-color: var(--main-bg-color);
 }
 
 @media only screen and (max-width: 600px) {

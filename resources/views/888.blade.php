@@ -7,13 +7,13 @@
 
 @section('content')
     <div class="presentation">
-        <h2>888</h2>
+        <h3>888</h3>
         <p class = "title-back"> “Ces séries d'illustrations partagent ma vision du monde scientifique, la poésie de ce que l'on sait et de ce que l'on cherche, la beauté que seuls les curieux remarquent.”</p>
     </div>
 
     <div class="images">
         @foreach ($series as $serieName => $imgs)
-            <h2>{{$serieName}}</h2>
+            <h3>{{$serieName}}</h3>
             <hr>
             <div class="image-table">
                 @foreach ($imgs as $img)

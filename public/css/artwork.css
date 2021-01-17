@@ -11,12 +11,9 @@
 }
 
 .column .img-selection {
-    box-shadow: 0 0 0 200vw rgba(0, 0, 0, 0.5);
     width: 150%;
     position: relative;
     margin-bottom: 10%;
-    border-radius: 5px;
-    box-shadow: none;
 }
 
 #left .img-selection{
@@ -66,9 +63,7 @@
 
     .column .img-selection {
         position: relative;
-        box-shadow: none;
         width: 100%;
-        border-radius: 0;
     }
 
     #left .img-selection{
