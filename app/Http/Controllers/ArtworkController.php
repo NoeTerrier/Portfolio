@@ -11,8 +11,6 @@ class ArtworkController extends Controller
 
     public function show() {
 
-
-
         $columns = ['left'   => 'column_left',
                     'center' => 'column_center',
                     'right'  => 'column_right'];
@@ -27,7 +25,8 @@ class ArtworkController extends Controller
 
         $pageList = ["space"      => "/portfolio/artwork/space",
                      "pixel art"  => "/portfolio/artwork/pixelArt",
-                     "888"        => "/portfolio/artwork/888"];
+                     "888"        => "/portfolio/artwork/888",
+                     "graphic design" => "/portfolio/graphicDesign"];
 
         return view('artwork', compact('columns', 'pageList'));
     }

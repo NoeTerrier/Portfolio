@@ -1,0 +1,102 @@
+.presentation {
+    margin: auto;
+}
+
+.presentation h2 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.presentation h3 {
+    font-size: 1em;
+    margin-top: 30%;
+}
+
+.description {
+    color: white;
+}
+
+.description a {
+    color: var(--line-color);
+}
+
+.section {
+    display: flex;
+    background-color: var(--second-color);
+}
+
+.case {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-loritz {
+    height: 100%;
+}
+
+.light {
+    background-color: var(--line-color);
+}
+
+.up {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    transition: opacity 0.2s linear;
+}
+
+.up:hover {
+    opacity: 0;
+}
+
+.imgs-enim {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-enim {
+    position: absolute;
+    height: 60%;
+    border-radius: 50%;
+    transition: transform 0.5s ease, width 0.5s, height 0.5s;
+}
+
+.main-img {
+    position: relative;
+}
+
+.imgs-enim:hover .img-enim {
+    height: 40%;
+}
+
+.imgs-enim:hover .main-img {
+    transform: translateY(50%);
+}
+
+.imgs-enim:hover .foreground-left {
+    transform: translate(-55%, -50%);
+}
+
+.imgs-enim:hover .foreground-right {
+    transform: translate(55%, -50%);
+}
+
+.img-amphibien {
+    height: 60%;
+}
+
+.img-couture {
+    width: 90%;
+    padding-left: 10%;
+}
+
+.logo-img {
+    background-color: white;
+}

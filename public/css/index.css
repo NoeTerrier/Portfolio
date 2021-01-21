@@ -84,6 +84,13 @@ h1 {
 .slide img{
     margin-top: -25%;
     width: 100%;
+    transition: all 0.15s linear;
+}
+
+.slide img:hover {
+    width: 110%;
+    margin-left: -5%;
+    margin-top: -30%;
 }
 
 /* ===========END=========== */

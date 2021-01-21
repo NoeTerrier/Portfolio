@@ -16,8 +16,9 @@ class pixelArtController extends Controller
 
         $pageList = ["space"      => "/portfolio/artwork/space",
                      "pixel art"  => "/portfolio/artwork/pixelArt",
-                     "888"        => "/portfolio/artwork/888"];
+                     "888"        => "/portfolio/artwork/888",
+                     "graphic design" => "/portfolio/graphicDesign"];
 
-        return view('pixel_art', compact('pageList', 'imgs'));
+        return view('pixelArt', compact('pageList', 'imgs'));
     }
 }

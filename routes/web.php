@@ -9,6 +9,7 @@ use App\Http\Controllers\Project888Controller;
 use App\Http\Controllers\SpaceController;
 use App\Http\Controllers\PixelArtController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\GraphicDesignController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,9 +34,7 @@ Route::get('portfolio/artwork/pixelArt', [PixelArtController::class, 'show']);
 
 Route::get('portfolio/artwork/888', [Project888Controller::class, 'show']);
 
-Route::get('portfolio/logos', function () {
-    return view('logos');
-});
+Route::get('portfolio/graphicDesign', [GraphicDesignController::class, 'show']);
 
 Route::get('portfolio/projects', [ProjectsController::class, 'show']);
 

@@ -19,10 +19,12 @@
 @endsection
 
 @section('content')
-    <div class="slider">
-        <div id = "slides">
-            <div class = "slide"><img id = "first"></div>
-            <div class = "slide"><img id = "next"></div>
+    <a href="portfolio/artwork">
+        <div class="slider">
+            <div id = "slides">
+                <div class = "slide"><img id = "first"></div>
+                <div class = "slide"><img id = "next"></div>
+            </div>
         </div>
-    </div>
+    </a>
 @endsection
