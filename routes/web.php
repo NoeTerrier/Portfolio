@@ -2,14 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ArtworkController;
-use App\Http\Controllers\Project888Controller;
-use App\Http\Controllers\SpaceController;
-use App\Http\Controllers\PixelArtController;
-use App\Http\Controllers\ProjectsController;
-use App\Http\Controllers\GraphicDesignController;
+use App\Http\Controllers\ViewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,20 +15,20 @@ use App\Http\Controllers\GraphicDesignController;
 |
 */
 
-Route::get('/', [HomeController::class, 'show']);
+Route::get('/', [ViewsController::class, 'showHomePage']);
 
-Route::get('portfolio', [HomeController::class, 'show']);
+Route::get('portfolio', [ViewsController::class, 'showHomePage']);
 
-Route::get('portfolio/artwork', [ArtworkController::class, 'show']);
+Route::get('portfolio/artwork', [ViewsController::class, 'showArtwork']);
 
-Route::get('portfolio/artwork/space', [SpaceController::class, 'show']);
+Route::get('portfolio/artwork/space', [ViewsController::class, 'showSpace']);
 
-Route::get('portfolio/artwork/pixelArt', [PixelArtController::class, 'show']);
+Route::get('portfolio/artwork/pixelArt', [ViewsController::class, 'showPixelArt']);
 
-Route::get('portfolio/artwork/888', [Project888Controller::class, 'show']);
+Route::get('portfolio/artwork/888', [ViewsController::class, 'show888']);
 
-Route::get('portfolio/graphicDesign', [GraphicDesignController::class, 'show']);
+Route::get('portfolio/graphicDesign', [ViewsController::class, 'showGraphicDesign']);
 
-Route::get('portfolio/projects', [ProjectsController::class, 'show']);
+Route::get('portfolio/projects', [ViewsController::class, 'showProjects']);
 
-Route::get('portfolio/about', [AboutController::class, 'show']);
+Route::get('portfolio/about', [ViewsController::class, 'showAboutPage']);

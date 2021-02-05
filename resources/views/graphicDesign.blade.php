@@ -37,12 +37,12 @@
         <div class="case">
             <div class="presentation">
                 <h2>Enim</h2>
-                <p>
+                <p class="description">
                     Voici une proposition de logo pour l'Ecole Nationale d'Ingénieurs de Metz.
                     Le symbole de la ville de Metz est le Graoully, un dragon légendaire qui
                     aurait dévasté la ville au Moyen-Age.
                 </p>
-                <h3>INKSCAPE</h3>
+                <h3 class="description">INKSCAPE</h3>
             </div>
         </div>
     </div>
@@ -71,11 +71,11 @@
         <div class="case">
             <div class="presentation">
                 <h2>Méthode de travail</h2>
-                <p>Je fais parfois mes croquis sur Krita et je créer le rendu final sur inkscape,
+                <p class="description">Je fais parfois mes croquis sur Krita et je créer le rendu final sur inkscape,
                     c'est un logiciel de création vectoriel gratuit et open source très pratique
                     pour débuter.
                 </p>
-                <h3>INKSCAPE</h3>
+                <h3 class="description">INKSCAPE</h3>
             </div>
         </div>
     </div>

@@ -36,16 +36,20 @@
 }
 
 .img-loritz {
-    height: 100%;
+    height: 100vh;
+    margin: 0 0 0 auto;
 }
 
 .light {
     background-color: var(--line-color);
 }
 
+.light .description {
+    color : var(--second-color);
+}
+
 .up {
     position: absolute;
-    height: 100vh;
     right: 0;
     transition: opacity 0.2s linear;
 }
@@ -94,9 +98,70 @@
 
 .img-couture {
     width: 90%;
-    padding-left: 10%;
+    margin-left: 10%;
 }
 
 .logo-img {
     background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .light {
+        flex-direction: column-reverse;
+    }
+
+    .case {
+        width: 100vw;
+        height: auto;
+    }
+
+    .presentation h2 {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .presentation h3 {
+        font-size: 1em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .description {
+        width: 80%;
+        margin: auto;
+    }
+
+    .img-loritz {
+        height: auto;
+        width: 100%;
+        margin: 0 0 0 auto;
+    }
+
+    .foreground-left {
+        display: none;
+    }
+
+    .foreground-right {
+        display: none;
+    }
+
+    .imgs-enim:hover .main-img {
+        transform: translateY(0);
+    }
+
+    .imgs-enim:hover .img-enim {
+        height: auto;
+    }
+
+    .main-img, .img-amphibien, .img-couture {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10%;
+    }
 }
