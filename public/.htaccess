@@ -3,7 +3,7 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    RewriteEngine Onz
+    RewriteEngine On
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
