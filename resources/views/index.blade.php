@@ -19,12 +19,16 @@
 @endsection
 
 @section('content')
-    <a href="portfolio/artwork">
+    <div class="content-div">
+        {{-- <button type="button" name="previous-button" id="previous-button"></button> --}}
         <div class="slider">
-            <div id = "slides">
-                <div class = "slide"><img id = "first"></div>
-                <div class = "slide"><img id = "next"></div>
-            </div>
+                <a href="portfolio/artwork">
+                <div id = "slides">
+                    <div class = "slide"><img id = "first"></div>
+                    <div class = "slide"><img id = "next"></div>
+                </div>
+            </a>
         </div>
-    </a>
+        {{-- <button type="button" name="next-button" id="next-button"></button> --}}
+    </div>
 @endsection

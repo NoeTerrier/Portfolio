@@ -8,6 +8,42 @@ h1 {
     justify-content: center;
  }
 
+ .content-div {
+     display: inline-grid;
+     grid-template-columns: 1fr min(60em, 60%) 1fr;
+     align-items: center;
+ }
+
+ .content-div button {
+     width: 3em;
+     height: 3em;
+     border: solid #f5d6b2;
+     border-width: 0 4px 4px 0;
+     background-color: inherit;
+     transition: transform 0.1s linear;
+     cursor: pointer;
+ }
+
+ #previous-button:hover {
+     transform: translateX(-0.5em) rotate(135deg);
+ }
+
+ #next-button:hover {
+     transform: translateX(0.5em) rotate(-45deg);
+ }
+
+ #previous-button {
+     margin-right: 5%;
+     margin-left: auto;
+     transform: rotate(135deg);
+ }
+
+ #next-button {
+     margin-left: 5%;
+     margin-right: auto;
+     transform: rotate(-45deg);
+ }
+
 /* ===========MENU=========== */
 .menu-div {
     width: 100%;
@@ -58,9 +94,8 @@ h1 {
 /* ===========SLIDER=========== */
 
 .slider {
-    margin: auto;
-    grid-row: 2;
-    width: min(60em, 80%);
+    grid-column: 2;
+    width: 100%;
     height: 25em;
     overflow: hidden;
     box-shadow: 12px 12px 24px 0px rgba(0,0,0,0.3);
@@ -74,23 +109,21 @@ h1 {
 }
 
 .slide {
-    float: left;
     align-items: center;
     justify-content: center;
-    display: grid;
+    display: flex;
     width: 100%;
 }
 
-.slide img{
-    margin-top: -25%;
+.slide img {
+    flex-shrink: 0;
+    margin-top: 10%;
     width: 100%;
     transition: all 0.15s linear;
 }
 
 .slide img:hover {
     width: 110%;
-    margin-left: -5%;
-    margin-top: -30%;
 }
 
 /* ===========END=========== */
@@ -106,7 +139,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #menu {
         display: flex;
         flex-direction: column;
@@ -123,6 +156,10 @@ h1 {
 
     .slide img{
         margin-top: 0;
+        width: 100%;
+    }
+
+    .slide img:hover {
         width: 100%;
     }
 

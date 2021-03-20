@@ -28,7 +28,7 @@
 .case {
     position: relative;
     width: 50%;
-    height: 100vh;
+    height: 105vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .img-loritz {
-    height: 100vh;
+    height: 100%;
     margin: 0 0 0 auto;
 }
 
@@ -50,7 +50,6 @@
 
 .up {
     position: absolute;
-    right: 0;
     transition: opacity 0.2s linear;
 }
 
