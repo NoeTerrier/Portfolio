@@ -15,7 +15,6 @@ function setup() {
     var html = document.documentElement;
     var height = Math.max( html.clientHeight, html.scrollHeight);
     var backgrounds = document.getElementsByClassName("particles");
-    console.log(backgrounds);
 
     for (let background of backgrounds) {
         var string = ""

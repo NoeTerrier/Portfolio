@@ -24,7 +24,6 @@
             <hr>
             <p>J'aime apprendre et exprérimenter pour créer.<br>Autodidacte, j'ai appris le dessin digital sur internet et en suivant des artistes professionels.</p>
             <p>J'utilise plusieurs techniques: digital painting, le dessin vectoriel, le pixel art, la programmation, ... <br>C'est important d'avoir des approches différentes pour créer des choses.</p>
-            <p>Je m'inspire principalement des jeux vidéos, de la science fiction, et du monde scientifique: ce sont des univers très riches.</p>
         </div>
 
         <img class="main-img" src="/images/curiosity_alpha.png" alt="">
