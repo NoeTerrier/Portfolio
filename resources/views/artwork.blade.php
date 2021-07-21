@@ -19,7 +19,7 @@
         @foreach ($columns as $column => $imgs)
             <div class="column" id = {{$column}}>
                 @foreach ($imgs as $img)
-                    <img src="{{$img->url}}" alt={{$img->name}}>
+                    <img src="{{url($img->url)}}" alt={{$img->name}}>
                 @endforeach
             </div>
         @endforeach

@@ -2,60 +2,82 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ImageData;
+use App\Models\Zone;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class ViewsController extends Controller
 {
-            //========= CONSTANTS =========//
-    const ARTWORK_MENU = ["space"      => "/portfolio/artwork/space",
-                          "pixel art"  => "/portfolio/artwork/pixelArt",
-                          "888"        => "/portfolio/artwork/888",
-                          "graphic design" => "/portfolio/graphicDesign"];
+    //========= CONSTANTS =========//
+    const ARTWORK_MENU = [
+        "space"      => "/portfolio/artwork/space",
+        "pixel art"  => "/portfolio/artwork/pixelArt",
+        "888"        => "/portfolio/artwork/888",
+        "graphic design" => "/portfolio/graphicDesign"
+    ];
 
-    const ABOUT_MENU = ["Gallery"  => "/portfolio/artwork",
-                        "Projects"  => "/portfolio/projects"];
+    const ABOUT_MENU = [
+        "Gallery"  => "/portfolio/artwork",
+        "Projects"  => "/portfolio/projects"
+    ];
 
-    const PROJECTS_MENU =  ["Gallery"  => "/portfolio/artwork",
-                            "About"  => "/portfolio/about"];
+    const PROJECTS_MENU =  [
+        "Gallery"  => "/portfolio/artwork",
+        "About"  => "/portfolio/about"
+    ];
 
-    const HOME_PAGE_MENU = ["Gallery"  => "/portfolio/artwork",
-                            "Projects"  => "/portfolio/projects",
-                            "About"    => "/portfolio/about"];
+    const HOME_PAGE_MENU = [
+        "Gallery"  => "/portfolio/artwork",
+        "Projects"  => "/portfolio/projects",
+        "About"    => "/portfolio/about"
+    ];
 
 
-            //========= VIEW FUNCTIONS =========//
-    public function showAboutPage() {
+    //========= VIEW FUNCTIONS =========//
+    public function showAboutPage()
+    {
         return view('about', ['pageList' => self::ABOUT_MENU]);
     }
 
-    public function showArtwork() {
-        $columns = ['left'   => 'column_left',
-                    'center' => 'column_center',
-                    'right'  => 'column_right'];
+    public function showArtwork()
+    {
+        $columns = [
+            'left'   => 'column_left',
+            'center' => 'column_center',
+            'right'  => 'column_right'
+        ];
 
         foreach ($columns as $key => $value) {
             $columns[$key] = self::getImagesInDB($value);
         }
 
-        return view('artwork', ['columns' => $columns,
-                                'pageList' => self::ARTWORK_MENU]);
+        return view('artwork', [
+            'columns' => $columns,
+            'pageList' => self::ARTWORK_MENU
+        ]);
     }
 
-    public function showGraphicDesign() {
+    public function showGraphicDesign()
+    {
         return view('graphicDesign', ['pageList' => self::ARTWORK_MENU]);
     }
 
-    public function showHomePage() {
+    public function showHomePage()
+    {
         return view('index', ['pageList' => self::HOME_PAGE_MENU]);
     }
 
-    public function showPixelArt() {
-        return view('pixelArt', ['pageList' => self::ARTWORK_MENU,
-                                 'imgs'     => self::getImagesInDB('pixel_art')]);
+    public function showPixelArt()
+    {
+        return view('pixelArt', [
+            'pageList' => self::ARTWORK_MENU,
+            'imgs'     => self::getImagesInDB('pixel_art')
+        ]);
     }
 
-    public function show888() {
+    public function show888()
+    {
         $zones = ["Amour chimique", "Gravité", "Longueur d'onde", "Vie"];
         $series = [];
 
@@ -63,26 +85,52 @@ class ViewsController extends Controller
             $series[$zoneName] = self::getImagesInDB($zoneName);
         }
 
-        return view('888', ['series' => $series,
-                            'pageList' => self::ARTWORK_MENU]);
+        return view('888', [
+            'series' => $series,
+            'pageList' => self::ARTWORK_MENU
+        ]);
     }
 
-    public function showProjects() {
+    public function showProjects()
+    {
         return view('projects', ['pageList' => self::PROJECTS_MENU]);
     }
 
-    public function showSpace() {
-        return view('space', ['pageList' => self::ARTWORK_MENU,
-                              'imgs'     => self::getImagesInDB('space')]);
+    public function showSpace()
+    {
+        return view('space', [
+            'pageList' => self::ARTWORK_MENU,
+            'imgs'     => self::getImagesInDB('space')
+        ]);
+    }
+
+    public function showAdmin()
+    {
+        return view('admin', [
+            'pageList' => self::ARTWORK_MENU,
+            'zones' => Zone::all(),
+            'images' => ImageData::all()
+        ]);
+    }
+
+    public function showEditImage($imageId)
+    {
+        $image = ImageData::find($imageId);
+        return view('editImage', [
+            'pageList' => self::ARTWORK_MENU,
+            'zones' => Zone::all(),
+            'image' => $image
+        ]);
     }
 
 
-            //========= DB FUNCTIONS =========//
-    private function getImagesInDB($labelName) {
-        return DB::table('imagesPerZone')
-                    ->join('imagesData', 'id_image', '=', 'imagesData.id')
-                    ->join('zones', 'id_zone', '=', 'zones.id')
-                    ->where('label', $labelName)
-                    ->get();
+    //========= DB FUNCTIONS =========//
+    private static function getImagesInDB($labelName)
+    {
+        return DB::table('images_zones')
+            ->join('image_data', 'image_data_id', '=', 'image_data.id')
+            ->join('zones', 'zone_id', '=', 'zones.id')
+            ->where('label', $labelName)
+            ->get();
     }
 }

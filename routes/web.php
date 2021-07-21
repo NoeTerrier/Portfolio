@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ImageDataController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ViewsController;
+use App\Http\Controllers\ZoneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,18 +19,37 @@ use App\Http\Controllers\ViewsController;
 
 Route::get('/', [ViewsController::class, 'showHomePage']);
 
-Route::get('portfolio', [ViewsController::class, 'showHomePage']);
+Route::prefix('portfolio')->group(function () {
+    Route::get('/', [ViewsController::class, 'showHomePage']);
 
-Route::get('portfolio/artwork', [ViewsController::class, 'showArtwork']);
+    Route::get('/artwork', [ViewsController::class, 'showArtwork']);
 
-Route::get('portfolio/artwork/space', [ViewsController::class, 'showSpace']);
+    Route::get('/artwork/space', [ViewsController::class, 'showSpace']);
 
-Route::get('portfolio/artwork/pixelArt', [ViewsController::class, 'showPixelArt']);
+    Route::get('/artwork/pixelArt', [ViewsController::class, 'showPixelArt']);
 
-Route::get('portfolio/artwork/888', [ViewsController::class, 'show888']);
+    Route::get('/artwork/888', [ViewsController::class, 'show888']);
 
-Route::get('portfolio/graphicDesign', [ViewsController::class, 'showGraphicDesign']);
+    Route::get('/graphicDesign', [ViewsController::class, 'showGraphicDesign']);
 
-Route::get('portfolio/projects', [ViewsController::class, 'showProjects']);
+    Route::get('/projects', [ViewsController::class, 'showProjects']);
 
-Route::get('portfolio/about', [ViewsController::class, 'showAboutPage']);
+    Route::get('/about', [ViewsController::class, 'showAboutPage']);
+
+
+    Route::prefix('admin')->group(function () {
+        Route::get('/', [ViewsController::class, 'showAdmin'])->name("admin.index");
+
+        Route::post('/image-data/new', [ImageDataController::class, 'store'])->name("imageData.store");
+
+        Route::get('/image-data/edit/{image}', [ViewsController::class, 'showEditImage'])->name("imageData.edit");
+
+        Route::post('/image-data/update/{image}', [ImageDataController::class, 'update'])->name("imageData.update");
+
+        Route::delete('/image-data/delete/{image}', [ImageDataController::class, 'destroy'])->name("imageData.destroy");
+
+        Route::post('/zone/new', [ZoneController::class, 'store'])->name("zone.store");
+
+        Route::delete('/zone/delete/{zone}', [ZoneController::class, 'destroy'])->name("zone.destroy");
+    });
+});

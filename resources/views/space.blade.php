@@ -19,7 +19,7 @@
     @php ($i = 0)
     @foreach ($imgs as $img)
         <div class={{$i % 2 == 0 ? 'set' : 'set_reverse'}}>
-            <img src={{$img->url}} alt={{$img->name}}>
+            <img src={{url($img->url)}} alt={{$img->name}}>
             <div class="description">
                 <p class="description-name">{{$img->name}}</p>
                 <hr>
