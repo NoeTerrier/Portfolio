@@ -66,15 +66,20 @@
 
 
             {{-- DELETE ZONE--}}
-            <div class="action-div" id="zone-delete">
+            <div class="action-div" id="zone-edit">
                 <h4>Supprimer une zone</h4>
                 @foreach ($zones as $zone)
-                <form action="{{route("zone.destroy", $zone)}}" method="POST" class="entry-line">
-                    @method('DELETE')
-                    @csrf
-                    <p>{{$zone->label}}</p>
-                    <button type="submit"> Delete </button>
-                </form>
+                <div class="entry-line">
+                    <form action="{{route("zone.update", $zone)}}" method="POST">
+                        @csrf
+                        <input type="text" name="label" value="{{$zone->label}}">
+                    </form>
+                    <form action="{{route("zone.destroy", $zone)}}" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <button type="submit"> Delete </button>
+                    </form>
+                </div>
                 @endforeach
             </div>
 

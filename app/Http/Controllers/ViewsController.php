@@ -108,7 +108,7 @@ class ViewsController extends Controller
     {
         return view('admin', [
             'pageList' => self::ARTWORK_MENU,
-            'zones' => Zone::all(),
+            'zones' => Zone::all()->sortBy('label'),
             'images' => ImageData::all()
         ]);
     }
@@ -118,7 +118,7 @@ class ViewsController extends Controller
         $image = ImageData::find($imageId);
         return view('editImage', [
             'pageList' => self::ARTWORK_MENU,
-            'zones' => Zone::all(),
+            'zones' => Zone::all()->sortBy('label'),
             'image' => $image
         ]);
     }

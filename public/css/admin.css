@@ -159,6 +159,16 @@ form > input {
   grid-template-columns: 1fr auto;
   height: 2rem;
   font-size: 0.7rem;
+  border: none;
+}
+
+.entry-line input {
+  border: none;
+  margin: 0;
+}
+
+.entry-line form {
+  display: flex;
   align-items: center;
 }
 
@@ -196,7 +206,7 @@ form > input {
   grid-row: 1;
 }
 
-#zone-delete {
+#zone-edit {
   grid-column: 2;
   grid-row: 2;
   overflow-y: scroll;

@@ -50,6 +50,8 @@ Route::prefix('portfolio')->group(function () {
 
         Route::post('/zone/new', [ZoneController::class, 'store'])->name("zone.store");
 
+        Route::post('/zone/update/{zone}', [ZoneController::class, 'update'])->name("zone.update");
+
         Route::delete('/zone/delete/{zone}', [ZoneController::class, 'destroy'])->name("zone.destroy");
     });
 });

@@ -25,12 +25,19 @@ class ZoneController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Zone  $zones
+     * @param  \App\Models\Zone  $zone
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Zone $zones)
+    public function update(Request $request, Zone $zone)
     {
-        //
+        $request_data = $request->validate(['label' => 'sometimes|unique:zones|max:30']);
+
+        if (isset($request_data['label'])) {
+            $zone->label = $request_data['label'];
+            $zone->save();
+        }
+
+        return response()->redirectToRoute("admin.index")->with('success', 'Zone updated');
     }
 
     /**
