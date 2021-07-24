@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ImageDataController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,8 +37,16 @@ Route::prefix('portfolio')->group(function () {
 
     Route::get('/about', [ViewsController::class, 'showAboutPage']);
 
+    Route::get('/login', function () {
+        return view('login', ['pageList' => []]);
+    })->name('login');
 
-    Route::prefix('admin')->group(function () {
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::post('/login', [AuthController::class, 'login'])->name('login');
+
+    Route::middleware('key_auth')->prefix('admin')->group(function () {
+
         Route::get('/', [ViewsController::class, 'showAdmin'])->name("admin.index");
 
         Route::post('/image-data/new', [ImageDataController::class, 'store'])->name("imageData.store");

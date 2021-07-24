@@ -2,9 +2,20 @@
   display: none;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: var(--second-color);
   color: var(--main-bg-color);
+}
+
+h4 {
+  height: 1rem;
 }
 
 h1 {
@@ -215,4 +226,30 @@ form > input {
 #image-edit {
   grid-column: 3;
   grid-row: 1 / 3;
+}
+
+#login {
+  width: auto;
+  margin-top: 5rem;
+  padding: 5rem;
+  padding-top: 4rem;
+}
+
+#login form {
+  display: grid;
+  justify-items: center;
+}
+
+#login label {
+  width: 100%;
+  text-align: left;
+}
+
+#login input {
+  margin: 1rem 0 2rem 0;
+  padding-bottom: 5px;
+  letter-spacing: 1rem;
+  text-align: center;
+  width: 20rem;
+  overflow: scroll;
 }

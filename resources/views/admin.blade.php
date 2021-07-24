@@ -9,20 +9,26 @@
     <div class="title">
         <i class="back-button"><a href="/portfolio"></a></i>
         <h1>//Admin</h1>
+        <form action="{{route('logout')}}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <button type="submit"> Logout </button>
+        </form>
     </div>
 @endsection
 
 @section('content')
     <div class="content">
         <div class="alert">
-            @if(session('success'))
-                <h4>{{session('success')}}</h4>
-            @endif
-            @if ($errors->any())
-                @foreach ($errors->all() as $error)
-                    <h4>{{ $error }}</h4></li>
-                @endforeach
-            @endif
+            <h4>
+                @if(session('success'))
+                    {{session('success')}}
+                @endif
+                @if ($errors->any())
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+                @endif
+            </h4>
         </div>
         <div class = "form-container">
 
@@ -33,7 +39,7 @@
                     @csrf
                     <label for="file-input">Image</label>
                     <label class="custom-file-input">
-                        <input type="file" name="image"/>
+                        <input type="file" name="image">
                         <i class="fa fa-cloud-upload"></i>
                     </label>
                     <label for="name-input">Name</label>
