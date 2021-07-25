@@ -1,57 +1,14 @@
-.end {
-  display: none;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 body {
   background-color: var(--second-color);
   color: var(--main-bg-color);
-}
-
-h4 {
-  height: 1rem;
 }
 
 h1 {
   color: var(--main-bg-color);
 }
 
-.alert {
-  font-size: large;
-  text-transform: uppercase;
-  color: var(--line-color);
-  text-align: center;
-  padding: 1rem;
-}
-
-.action-div,
-.edit-div {
-  background-color: var(--second-color-lighter);
-  width: calc(100% - 2rem);
-  padding: 1rem;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-}
-
-.edit-div {
-  width: 30rem;
-  margin: auto;
-  margin-bottom: 5rem;
-}
-
-.edit-div img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 h4 {
+  height: 1rem;
   margin: 0;
   margin-bottom: 1rem;
 }
@@ -99,20 +56,7 @@ form > input {
   border-bottom: 2px solid #ccc;
 }
 
-.custom-file-input {
-  margin: auto;
-  width: 100%;
-  background-color: inherit;
-  display: inline-block;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.custom-file-input:hover {
-  background-color: var(--second-color);
-}
-
+/* === MENU === */
 .menu {
   width: min(60em, 80%);
   display: flex;
@@ -154,6 +98,57 @@ form > input {
   width: 50%;
 }
 
+/* === CONTENT === */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  font-size: large;
+  text-transform: uppercase;
+  color: var(--line-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.action-div,
+.edit-div {
+  background-color: var(--second-color-lighter);
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-div {
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.edit-div img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.custom-file-input {
+  margin: auto;
+  width: 100%;
+  background-color: inherit;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.custom-file-input:hover {
+  background-color: var(--second-color);
+}
+
 .form-container {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -166,8 +161,7 @@ form > input {
 }
 
 .entry-line {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   height: 2rem;
   font-size: 0.7rem;
   border: none;
@@ -201,6 +195,11 @@ form > input {
   margin-bottom: 5px;
 }
 
+.end {
+  display: none;
+}
+
+/* ==== ID ====  */
 #image-create {
   grid-column: 1;
   grid-row: 1 / 3;
@@ -235,6 +234,7 @@ form > input {
   padding-top: 4rem;
 }
 
+/* === LOGIN === */
 #login form {
   display: grid;
   justify-items: center;
@@ -252,4 +252,21 @@ form > input {
   text-align: center;
   width: 20rem;
   overflow: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  #image-edit {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
 }

@@ -20,6 +20,8 @@ use App\Http\Controllers\ZoneController;
 
 Route::get('/', [ViewsController::class, 'showHomePage']);
 
+Route::get('/get-zone-image/{zone}', [ImageDataController::class, 'getInZoneUrls'])->name('zone.image');
+
 Route::prefix('portfolio')->group(function () {
     Route::get('/', [ViewsController::class, 'showHomePage']);
 

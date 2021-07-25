@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\ImageData;
 use App\Models\Zone;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class ViewsController extends Controller
 {
@@ -49,7 +47,7 @@ class ViewsController extends Controller
         ];
 
         foreach ($columns as $key => $value) {
-            $columns[$key] = self::getImagesInDB($value);
+            $columns[$key] = ImageData::inZone($value);
         }
 
         return view('artwork', [
@@ -72,7 +70,7 @@ class ViewsController extends Controller
     {
         return view('pixelArt', [
             'pageList' => self::ARTWORK_MENU,
-            'imgs'     => self::getImagesInDB('pixel_art')
+            'imgs'     => ImageData::inZone('pixel_art')
         ]);
     }
 
@@ -82,7 +80,7 @@ class ViewsController extends Controller
         $series = [];
 
         foreach ($zones as $zoneName) {
-            $series[$zoneName] = self::getImagesInDB($zoneName);
+            $series[$zoneName] = ImageData::inZone($zoneName);
         }
 
         return view('888', [
@@ -100,7 +98,7 @@ class ViewsController extends Controller
     {
         return view('space', [
             'pageList' => self::ARTWORK_MENU,
-            'imgs'     => self::getImagesInDB('space')
+            'imgs'     => ImageData::inZone('space')
         ]);
     }
 
@@ -115,22 +113,10 @@ class ViewsController extends Controller
 
     public function showEditImage($imageId)
     {
-        $image = ImageData::find($imageId);
         return view('editImage', [
             'pageList' => self::ARTWORK_MENU,
             'zones' => Zone::all()->sortBy('label'),
-            'image' => $image
+            'image' => ImageData::find($imageId),
         ]);
-    }
-
-
-    //========= DB FUNCTIONS =========//
-    private static function getImagesInDB($labelName)
-    {
-        return DB::table('images_zones')
-            ->join('image_data', 'image_data_id', '=', 'image_data.id')
-            ->join('zones', 'zone_id', '=', 'zones.id')
-            ->where('label', $labelName)
-            ->get();
     }
 }

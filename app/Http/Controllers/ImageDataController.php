@@ -111,4 +111,14 @@ class ImageDataController extends Controller
         }
         return response()->redirectToRoute("admin.index")->with('success', 'Image Deleted');
     }
+
+    public function getInZoneUrls(String $zone)
+    {
+        $urls = [];
+        foreach (ImageData::inZone($zone) as $image) {
+            array_push($urls, url($image->url));
+        }
+
+        return json_encode($urls);
+    }
 }

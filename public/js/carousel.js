@@ -1,65 +1,62 @@
 window.addEventListener("load", setup);
 
 index = 0;
-const listOfImg = ["astronaute", "card", "hand", "curiosity", "chevalier"];
+let urls = [];
 
 function setup() {
-    slides = document.getElementById("slides");
-    firstImg = document.getElementById("first");
-    nextImg = document.getElementById("next");
-    moving = false
+  slides = document.getElementById("slides");
+  firstImg = document.getElementById("first");
+  nextImg = document.getElementById("next");
+  moving = false;
 
-    // buttonPrevious = document.getElementById("previous-button");
-    // buttonPrevious.addEventListener('click', () => {
-    //     if (!moving) {
-    //         moveRight();
-    //     }});
-    // buttonNext = document.getElementById("next-button");
-    // buttonNext.addEventListener('click', () => {
-    //     if (!moving) {
-    //         moveLeft();
-    //     }});
+  xhr = new XMLHttpRequest();
 
-    firstImg.src = sourceOf(listOfImg[0]);
-    nextImg.src = sourceOf(listOfImg[0]);
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      urls = JSON.parse(this.response);
 
-    setInterval(moveRight, 7000);
+      firstImg.src = urls[0];
+      nextImg.src = urls[0];
+
+      setInterval(moveRight, 7000);
+    } else if (this.readyState == 4 && this.status == 404) {
+      console.log("Error 404");
+    }
+  };
+
+  xhr.open("GET", "get-zone-image/carousel", true);
+  xhr.send();
 }
 
-
 function resetPos() {
-    moving = false;
-    firstImg.src = nextImg.src;
-    slides.style.transitionDuration = "0s";
-    slides.style.transform = "translateX(0)";
+  moving = false;
+  firstImg.src = nextImg.src;
+  slides.style.transitionDuration = "0s";
+  slides.style.transform = "translateX(0)";
 }
 
 function moveLeft() {
-    moving = true;
-    nextImg.src = sourceOf(listOfImg[nextIndexLeft()]);
-    slides.style.transform = "translateX(-50%)";
-    slides.style.transitionDuration = "2s";
-    setTimeout(resetPos, 2000);
+  moving = true;
+  nextImg.src = urls[nextIndexLeft()];
+  slides.style.transform = "translateX(-50%)";
+  slides.style.transitionDuration = "2s";
+  setTimeout(resetPos, 2000);
 }
 
 function moveRight() {
-    moving = true;
-    nextImg.src = sourceOf(listOfImg[nextIndexRight()]);
-    slides.style.transform = "translateX(-50%)";
-    slides.style.transitionDuration = "2s";
-    setTimeout(resetPos, 2000);
+  moving = true;
+  nextImg.src = urls[nextIndexRight()];
+  slides.style.transform = "translateX(-50%)";
+  slides.style.transitionDuration = "2s";
+  setTimeout(resetPos, 2000);
 }
 
 function nextIndexLeft() {
-    index = (index == 0) ? listOfImg.length - 1 : --index;
-    return index;
+  index = index == 0 ? urls.length - 1 : --index;
+  return index;
 }
 
 function nextIndexRight() {
-    index = (index == listOfImg.length - 1) ? 0 : ++index;
-    return index;
-}
-
-function sourceOf(name) {
-    return ("/images/" + name + ".jpg");
+  index = index == urls.length - 1 ? 0 : ++index;
+  return index;
 }
