@@ -1,3 +1,4 @@
+.gitignore
 .env
 /vendor
 admin.txt

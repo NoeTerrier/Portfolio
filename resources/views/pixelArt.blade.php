@@ -13,7 +13,7 @@
     <div class="images">
 
         @foreach ($imgs as $img)
-            <img src = {{$img->url}} alt={{$img->name}}>
+            <img src = {{url($img->url)}} alt={{$img->name}}>
             @if ($img->description != null)
                 <div class="description">
                     <div class="content">

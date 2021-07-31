@@ -1,147 +1,147 @@
-.set img, .set_reverse img {
-    width: 50%;
-    height: auto;
-    transition: height 0.3s ease;
+.set img,
+.set_reverse img {
+  width: 50%;
+  height: auto;
+  transition: height 0.3s ease;
 }
 
 img:hover {
-    height: auto;
+  height: auto;
 }
 
 h1 {
-    color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
 
 .main {
-    position: absolute;
-    width: 100%;
-    background: linear-gradient(#090a0f 0%, #1b2735 100%);
-    z-index: 0;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#090a0f 0%, #1b2735 100%);
+  z-index: 0;
 }
 
 .stars {
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 #stars-background {
-    width:  1px;
-    height: 1px;
-    transform: translateY(calc(var(--scroll) * -5em));
+  width: 1px;
+  height: 1px;
+  transform: translateY(calc(var(--scroll) * -5em));
 }
 
 #stars-midle {
-    width:  3px;
-    height: 3px;
-    transform: translateY(calc(var(--scroll) * 5em));
+  width: 3px;
+  height: 3px;
+  transform: translateY(calc(var(--scroll) * 5em));
 }
 
 #stars-foreground {
-    width:  5px;
-    height: 5px;
-    transform: translateY(calc(var(--scroll) * 10em));
-}
-
-#menu {
-    color: var(--line-color);
+  width: 5px;
+  height: 5px;
+  transform: translateY(calc(var(--scroll) * 10em));
 }
 
 .menu-item {
-    color: var(--line-color);
+  color: var(--line-color);
 }
 
 .menu-item:hover {
-    color: white;
+  color: white;
 }
 
 p {
-    color: lightgrey;
-    margin: 0;
-    max-height: 100%;
+  color: lightgrey;
+  margin: 0;
+  max-height: 100%;
 }
 
 .intro {
-    display: flex;
+  display: flex;
 }
 
 .intro_text {
-    grid-column: 2;
-    margin: auto;
-    letter-spacing: 0.2em;
-    padding-bottom: 10%;
+  grid-column: 2;
+  margin: auto;
+  letter-spacing: 0.2em;
+  padding-bottom: 10%;
 }
 
-.set, .set_reverse{
-    margin: auto;
-    margin-bottom: 5%;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
+.set,
+.set_reverse {
+  margin: auto;
+  margin-bottom: 5%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .set {
-    margin-right: auto;
-    margin-left: 10%;
+  margin-right: auto;
+  margin-left: 10%;
 }
 
-.set .description{
-    margin-left: 5%;
+.set .description {
+  margin-left: 5%;
 }
 
 .set_reverse {
-    flex-direction: row-reverse;
-    text-align: right;
-    margin-right: 10%;
-    margin-left: auto;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-right: 10%;
+  margin-left: auto;
 }
 
 .set_reverse .description {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 .description-name {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: var(--main-bg-color);
-    text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--main-bg-color);
+  text-transform: uppercase;
 }
 
 /* ===========END=========== */
 .logo-img {
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 @media only screen and (max-width: 600px) {
-    .intro_text {
-        margin: auto;
-        width: 80%;
-    }
+  .intro_text {
+    margin: auto;
+    width: 80%;
+  }
 
-    .set, .set_reverse {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        margin: 15% 0 15% 0;
-    }
+  .set,
+  .set_reverse {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 15% 0 15% 0;
+  }
 
-    .set img, .set_reverse img {
-        height: 15em    ;
-        width: auto;
-        transition: height 0.3s ease;
-    }
+  .set img,
+  .set_reverse img {
+    height: 15em;
+    width: auto;
+    transition: height 0.3s ease;
+  }
 
-    .description {
-        margin: 5% 0 5% 0;
-        width: 80%;
-    }
+  .description {
+    margin: 5% 0 5% 0;
+    width: 80%;
+  }
 
-    p {
-        color: white;
-    }
+  p {
+    color: white;
+  }
 
-    .end {
-        background-color: #1b2735;
-    }
+  .end {
+    background-color: #1b2735;
+  }
 }

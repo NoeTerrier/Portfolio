@@ -18,7 +18,7 @@
             <div class="image-table">
                 @foreach ($imgs as $img)
                     <div class="element">
-                        <img loading = "lazy" src={{$img->url}} alt={{$img->name}}>
+                        <img loading = "lazy" src={{url($img->url)}} alt={{$img->name}}>
                         <p class="description">
                         @php ($descriptions = explode('\n', $img->description))
                             @foreach ($descriptions as $text)
