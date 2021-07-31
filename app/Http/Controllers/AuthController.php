@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 class AuthController extends Controller
 {
-    private const KEY = '$2y$12$1uKGGPtz4z5kFJxCoZw/jeFX/nunNNjp6IhkDMMO5V4wUg5bVQY6W';
+    private const KEY = '$2y$12$G5Fk9uxasopfuA2KVcb8EOThpVXLHixVfq8LycZykLXmbbCnLl/2W';
 
     /**
      * Redirect to login page if not authentificated
