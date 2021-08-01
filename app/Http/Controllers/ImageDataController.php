@@ -19,7 +19,7 @@ class ImageDataController extends Controller
     {
         $request_data = $request->validate([
             'name' => 'required|max:30',
-            'description' => 'max:250',
+            'description' => 'max:1000',
             'image' => 'required|max:128000'
         ]);
 
@@ -57,7 +57,7 @@ class ImageDataController extends Controller
 
         $request_data = $request->validate([
             'name' => 'sometimes|max:30',
-            'description' => 'sometimes|max:250',
+            'description' => 'sometimes|max:1000',
             'image' => 'sometimes|max:128000'
         ]);
 

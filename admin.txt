@@ -1,6 +1,8 @@
 ssh thomaep-noe@ssh.cluster030.hosting.ovh.net -p 22
 QQI58echo98z
 
+phpmyadmin:
+https://phpmyadmin.cluster030.hosting.ovh.net/index.php?pma_username=thomaepnoe&pma_servername=thomaepnoe.mysql.db
 
 mdp site: 
 php > password_hash("12345", PASSWORD_DEFAULT, ['cost' => 12]);
@@ -8,3 +10,5 @@ $2y$12$1uKGGPtz4z5kFJxCoZw/jeFX/nunNNjp6IhkDMMO5V4wUg5bVQY6W
 
 php > password_hash("mvtmJSUN14", PASSWORD_DEFAULT, ['cost' => 12]);
 $2y$12$G5Fk9uxasopfuA2KVcb8EOThpVXLHixVfq8LycZykLXmbbCnLl/2W
+
+mysql://thomaepnoe:QQI58echo98z@thomaepnoe.mysql.db:3306/Couture?serverVersion=5.6
