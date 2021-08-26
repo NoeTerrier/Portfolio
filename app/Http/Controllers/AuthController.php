@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 class AuthController extends Controller
 {
-    private const KEY = '$2y$12$G5Fk9uxasopfuA2KVcb8EOThpVXLHixVfq8LycZykLXmbbCnLl/2W';
-
     /**
      * Redirect to login page if not authentificated
      *
@@ -13,7 +11,7 @@ class AuthController extends Controller
      */
     public function login()
     {
-        if (password_verify(request()->password, self::KEY)) {
+        if (password_verify(request()->password, env('ADMIN_PWD'))) {
             request()->session()->put('authentificated', true);
             return redirect(route('admin.index'));
         } else {

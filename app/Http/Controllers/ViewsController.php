@@ -47,7 +47,7 @@ class ViewsController extends Controller
         ];
 
         foreach ($columns as $key => $value) {
-            $columns[$key] = ImageData::inZone($value);
+            $columns[$key] = ImageData::inZone($value)->shuffle();
         }
 
         return view('artwork', [
