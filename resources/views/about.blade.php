@@ -22,7 +22,7 @@
             <h2>Noé Terrier</h2>
             <p>Étudiant en informatique à l'EPFL - 19 ans</p>
             <hr>
-            <p>J'aime apprendre et exprérimenter pour créer.<br>Autodidacte, j'ai appris le dessin digital sur internet et en suivant des artistes professionels.</p>
+            <p>J'aime apprendre et exprérimenter pour créer.<br>J'ai appris le dessin digital sur internet et en suivant des artistes professionels.</p>
             <p>J'utilise plusieurs techniques: digital painting, le dessin vectoriel, le pixel art, la programmation, ... <br>C'est important d'avoir des approches différentes pour créer des choses.</p>
         </div>
 
