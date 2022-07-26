@@ -1,0 +1,13 @@
+node_modules/
+vendor/
+storage/app
+storage/framework
+storage/logs
+stubs
+tests
+.env.example
+.git*
+.prettierignore
+*.cache
+phpunit.xml
+supervisor.pid
