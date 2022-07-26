@@ -33,6 +33,8 @@ Route::prefix('portfolio')->group(function () {
 
     Route::get('/artwork/888', [ViewsController::class, 'show888']);
 
+    Route::get('/artwork/memory', [ViewsController::class, 'showMemory']);
+
     Route::get('/graphicDesign', [ViewsController::class, 'showGraphicDesign']);
 
     Route::get('/projects', [ViewsController::class, 'showProjects']);

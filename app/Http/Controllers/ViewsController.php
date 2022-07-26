@@ -9,10 +9,11 @@ class ViewsController extends Controller
 {
     //========= CONSTANTS =========//
     const ARTWORK_MENU = [
-        "space"      => "/portfolio/artwork/space",
-        "pixel art"  => "/portfolio/artwork/pixelArt",
-        "888"        => "/portfolio/artwork/888",
-        "graphic design" => "/portfolio/graphicDesign"
+        "space"     => "/portfolio/artwork/space",
+        "pixel art" => "/portfolio/artwork/pixelArt",
+        "888"       => "/portfolio/artwork/888",
+        "graphic design" => "/portfolio/graphicDesign",
+        "memory"    => "/portfolio/artwork/memory"
     ];
 
     const ABOUT_MENU = [
@@ -99,6 +100,14 @@ class ViewsController extends Controller
         return view('space', [
             'pageList' => self::ARTWORK_MENU,
             'imgs'     => ImageData::inZone('space')
+        ]);
+    }
+
+    public function showMemory()
+    {
+        return view('memory', [
+            'pageList' => self::ARTWORK_MENU,
+            'imgs' => ImageData::inZone('memory')
         ]);
     }
 

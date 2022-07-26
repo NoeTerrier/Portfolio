@@ -20,10 +20,10 @@
     <div class="content">
         <div class="presentation">
             <h2>Noé Terrier</h2>
-            <p>Étudiant en informatique à l'EPFL - 19 ans</p>
+            <p>Étudiant en informatique à l'EPFL - {{date_diff(date_create(date("M j, Y")), date_create("2001-11-30"))->format("%y")}} ans</p>
             <hr>
-            <p>J'aime apprendre et exprérimenter pour créer.<br>J'ai appris le dessin digital sur internet et en suivant des artistes professionels.</p>
-            <p>J'utilise plusieurs techniques: digital painting, le dessin vectoriel, le pixel art, la programmation, ... <br>C'est important d'avoir des approches différentes pour créer des choses.</p>
+            <p>Bienvenu sur mon portfolio !<br><br>Je dessine de temps en temps (mais pas que) et ce site est un moyen pour moi d'expérimenter sur un nouveau support numérique.</p>
+            <p></p>
         </div>
 
         <img class="main-img" src="/images/curiosity_alpha.png" alt="">
