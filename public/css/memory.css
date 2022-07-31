@@ -13,23 +13,19 @@
 }
 
 
-.img-selection {
-    transform: rotateY(180deg);
-}
-
 a {
-    color: aliceblue;
+    color: var(--main-bg-color);
 }
 
 .element {
     display: flex;
     flex-direction: column;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
     margin: 2rem;
 }
 
-.element p {
-    margin-top: 0;
-    color: var(--line-color);
+.element h3 {
+    text-transform: none;
 }
 
 
@@ -45,7 +41,6 @@ a {
     background-color: transparent;
     width: 25rem;
     height: 25rem;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */ 
     transition: transform 0.8s;
     transform-style: preserve-3d;
     border-radius: 10px;

@@ -6,6 +6,44 @@
 @endsection
 
 @section('content')
+
+    <div class="section">
+        <div class="case">
+            <div class="presentation">
+                <h2>Logo Pull <br>de Faculté IC</h2>
+                <p class="description">
+                    L'association des étudiants en informatique de l'EPFL, <a href="https://clic.epfl.ch/">la CLIC</a>, a organisé un concours pour le prochain design à broder sur les pulls de Faculté.
+                    <br><br>
+                    J'ai créé ce design avec un ami, Mallory Henriet (qui a fait le IC à l'avant du pull) et il a été selectionné.
+                </p>
+                <h3 class="description">INSKCAPE</h3>
+            </div>
+        </div>
+
+        <div class="case">
+            <img class = "img-overlay up" src="/images/dg/logo_pull_fac.jpg">
+            <img class = "img-overlay" src="/images/dg/mockup_pull_fac.jpg">
+        </div>
+    </div>
+
+    <div class="section light">
+        <div class="case">
+            <img class = "img-affiches" src="/images/dg/affiches CLIC.jpg">
+        </div>
+
+        <div class="case">
+            <div class="presentation">
+                <h2>Affiches</h2>
+                <p class="description">
+                    Depuis plus d'un an, je suis responsable communication à <a href="https://clic.epfl.ch/">la CLIC</a> avec Mallory Henriet. 
+                    <br><br>
+                    On a créé ensemble plusieurs affiches pour les événements de l'association.
+                </p>
+                <h3 class="description">INSKCAPE | AFFINITY DESIGNER</h3>
+            </div>
+        </div>
+    </div>
+
     <div class="section">
         <div class="case">
             <div class="presentation">
@@ -21,8 +59,8 @@
         </div>
 
         <div class="case">
-            <img class = "img-loritz" src="/images/dg/pull_PT.jpg">
-            <img class = "img-loritz up" src="/images/dg/loritz_mockup.jpg">
+            <img class = "img-overlay up" src="/images/dg/loritz_mockup.jpg">
+            <img class = "img-overlay" src="/images/dg/pull_PT.jpg">
         </div>
     </div>
 
@@ -53,7 +91,6 @@
                 <h2>projet DUT</h2>
                 <p class="description">
                     Un ami m'a commandé un logo pour son projet de DUT agronomie portant sur la protection des espèces amphibiennes.
-                    <a href="https://www.facebook.com/finbienlesamphibiens/">Allez-voir ça!</a>
                 </p>
                 <h3 class="description">KRITA | INSKCAPE</h3>
             </div>
@@ -71,7 +108,7 @@
         <div class="case">
             <div class="presentation">
                 <h2>Méthode de travail</h2>
-                <p class="description">Je fais parfois mes croquis sur Krita et je créer le rendu final sur inkscape,
+                <p class="description">Je fais parfois mes croquis sur Krita et je crée le rendu final sur inkscape,
                     c'est un logiciel de création vectoriel gratuit et open source très pratique
                     pour débuter.
                 </p>
