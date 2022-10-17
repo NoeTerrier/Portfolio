@@ -16,7 +16,7 @@
 
 /* ===========END=========== */
 .end {
-    position: relative;
+    position: absolute;
 }
 
 .contacts_link p {

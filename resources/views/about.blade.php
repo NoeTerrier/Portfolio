@@ -22,7 +22,7 @@
             <h2>Noé Terrier</h2>
             <p>Étudiant en informatique à l'EPFL - {{date_diff(date_create(date("M j, Y")), date_create("2001-11-30"))->format("%y")}} ans</p>
             <hr>
-            <p>Bienvenu sur mon portfolio !<br><br>Je dessine de temps en temps (mais pas que) et ce site est un moyen pour moi d'expérimenter sur un nouveau support numérique.</p>
+            <p>Bienvenue sur mon portfolio !<br><br>Je dessine de temps en temps (mais pas que) et ce site est un moyen pour moi d'expérimenter sur un nouveau support numérique.</p>
             <p></p>
         </div>
 

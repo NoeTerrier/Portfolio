@@ -46,10 +46,10 @@
                             </div>
                         </a>
                     <li>
-                        <a class = "contacts_link" href="mailto: terriernoe@gmail.com">
+                        <a class = "contacts_link" href="mailto: noeterrier@proton.me">
                             <div class="contacts_link">
                                     <span class="logo-img logo-mail"></span>
-                                <p>terriernoe@mail.com</p>
+                                <p>noeterrier@proton.me</p>
                             </div>
                         </a>
                 </ul>
