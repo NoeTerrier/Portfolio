@@ -105,5 +105,30 @@
             </div>
         </div>
 
+        <div class="invitation">
+            <div class="action-div" id="invitation-create">
+                <form action="{{route("invitation.store")}}" method="POST" enctype="multipart/form-data">
+                    <h4>Créer un événement</h4>
+
+                    @php
+                        $eventName = is_null($invitation) ? "Nothing" : $invitation->eventName;
+                        $date = is_null($invitation) ? "Never" : $invitation->date;
+                        $description = is_null($invitation) ? "You're not invited because nothing is planned. Or maybe because we don't like you." : $invitation->description;
+                    @endphp
+
+                    @csrf
+                    <label for="eventName-input">Event name</label>
+                    <input type="text" name="eventName" value="{{ $eventName }}" id="eventName-input"> <br><br>
+                    <label for="eventDate">Date</label>
+                    <input type="date" name="date" id="eventDate-input">
+                    <label for="eventDescription-input">Description</label>
+                    <textarea name="description" cols="30" rows="8" id="eventDescription-input">{{ $description }}</textarea>
+                    
+                    <button type="submit"> Upload </button>
+                </form>
+            </div>
+        </div>
+
     </div>
+
 @endsection

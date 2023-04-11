@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Cooper Black";
+    src: url('/resources/Cooper\ Black\ Regular.ttf');
+  }
+
+  :root {
+    --background-color: rgb(27, 29, 29);
+  }
+
+body {
+    background-color: var(--background-color);
+}
+
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.page-centered {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.back-card, .front-card {
+    width: min(70%, 25rem);
+}
+
+.front-card {
+    pointer-events: none;
+    z-index: 3;
+}
+
+.card-inside {
+    position: relative;
+
+    
+    width: min(60%, 20rem);
+    margin: auto;
+    margin-top: 20rem;
+
+    user-select: none;
+
+    color: rgb(255, 255, 255);
+    padding: min(2%, 1rem);
+    background-color: rgb(255, 145, 0);
+
+    text-align: center;
+
+    height: 50rem;
+
+    z-index: 1;
+}
+
+.card-inside h1 {
+    font-family: "Cooper Black";
+    font-size: 2rem;
+}
+
+.card-inside h2, .card-inside p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.cache {
+    top: 110%;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-color: var(--background-color);
+    z-index: 2;
+}

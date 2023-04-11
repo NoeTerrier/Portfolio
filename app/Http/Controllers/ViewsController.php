@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ImageData;
+use App\Models\Invitation;
 use App\Models\Zone;
 
 class ViewsController extends Controller
@@ -116,7 +117,8 @@ class ViewsController extends Controller
         return view('admin', [
             'pageList' => self::ARTWORK_MENU,
             'zones' => Zone::all()->sortBy('label'),
-            'images' => ImageData::all()
+            'images' => ImageData::all(),
+            'invitation' => Invitation::last()
         ]);
     }
 
@@ -126,6 +128,16 @@ class ViewsController extends Controller
             'pageList' => self::ARTWORK_MENU,
             'zones' => Zone::all()->sortBy('label'),
             'image' => ImageData::find($imageId),
+        ]);
+    }
+
+    public function showInvitation() {
+        $inv = Invitation::last();
+
+        return view('invitation', [
+            'eventName' => is_null($inv) ? "Nothing" : $inv->eventName,
+            'date' => is_null($inv) ? 'never' : $inv->date,
+            'description' => is_null($inv) ? "You're not invited because nothing is planned. Or maybe because we don't like you." : $inv->description
         ]);
     }
 }

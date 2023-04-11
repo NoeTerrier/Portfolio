@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ImageData;
 use App\Models\Zone;
 use Illuminate\Http\Request;
 use Exception;
@@ -58,6 +57,6 @@ class ZoneController extends Controller
             dd($e);
         }
 
-        return response()->redirectToRoute("admin.index")->with('success', 'Zone Deleted');
+        return response()->redirectToRoute("admin.index")->with('success', 'Zone deleted');
     }
 }
