@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ViewsController;
 use App\Http\Controllers\ZoneController;
+use App\Http\Controllers\InvitationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ use App\Http\Controllers\ZoneController;
 */
 
 Route::get('/', [ViewsController::class, 'showHomePage']);
+
+Route::get('/invitation', [ViewsController::class, 'showInvitation']);
 
 Route::get('/get-zone-image/{zone}', [ImageDataController::class, 'getInZoneUrls'])->name('zone.image');
 
@@ -66,5 +69,11 @@ Route::prefix('portfolio')->group(function () {
         Route::post('/zone/update/{zone}', [ZoneController::class, 'update'])->name("zone.update");
 
         Route::delete('/zone/delete/{zone}', [ZoneController::class, 'destroy'])->name("zone.destroy");
+
+        Route::post('/invitation/new', [InvitationController::class, 'store'])->name('invitation.store');
+
+        Route::post('/invitation/update/{invitation}', [InvitationController::class, 'update'])->name("invitation.update");
+
+        Route::delete('/invitation/delete/{invitation}', [InvitationController::class, 'destroy'])->name("invitation.destroy");
     });
 });
