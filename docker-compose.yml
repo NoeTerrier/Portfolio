@@ -15,7 +15,7 @@ services:
     volumes:
       - portfolio-noe-storage:/app/storage
     environment:
-      VIRTUAL_HOST: noeterrier.fr
+      VIRTUAL_HOST: noeterrier.fr,www.noeterrier.fr
 
   db:
     image: mariadb
