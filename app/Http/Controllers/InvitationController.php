@@ -18,7 +18,7 @@ class InvitationController extends Controller
     {
         $request_data = $request->validate([
             'eventName' => 'required|max:30',
-            'description' => 'required|max:512',
+            'description' => 'required|max:255',
             'date' => 'required'
         ]);
 
@@ -47,7 +47,7 @@ class InvitationController extends Controller
     {
         $request_data = $request->validate([
             'eventName' => 'sometime|max:30',
-            'description' => 'sometime|max:512',
+            'description' => 'sometime|max:255',
             'date' => 'sometime'
         ]);
 
