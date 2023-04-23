@@ -17,13 +17,13 @@
                 <div class="card-inside">
                     <h1>Le Club des Nuls</h1>
 
-                    <p>You have been invited to:</p>
+                    <p>invites you to:</p>
 
                     <h2>{{$eventName}}</h2>
 
-                    <p>Date: {{$date}}</p>
-                    <p>Where: Rue du Jura, 9, Crissier</p>
+                    <p>{{$date}}</p>
                     <p>{{$description}}</p>
+                    <p class="address">Rue du Jura, 9, Crissier</p>
                 </div>
                 <img src="/resources/front card.svg" alt="" class="front-card page-centered">        
                 <div class="cache page-centered"></div>
